@@ -1,0 +1,105 @@
+.btn{
+    //tipo BOx    
+    &.box{
+        margin: 0 10px 20px 10px;
+        padding: 10px 15px;
+        border: 1px solid $corHover;
+        font-size: 16px;
+        font-weight: 700;
+        background: #fff;
+        color: black;
+    }
+    // &.bt-config{
+    //     background: $body-bg;        
+    //     box-shadow: 0 5px 10px rgba(81, 81, 81, 0.3);
+    //     width: 38px;
+    //     padding: 6px 0;
+    //     &.ativo{
+    //         box-shadow: 1px 0px 3px rgba(81, 81, 81, 0.3);
+    //     }
+    // }
+    &.btn-link{
+        background: #42b371;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 15px;
+        margin: 0 0 0 20px;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        
+    }
+    // &.bt-capa{
+    //     display: inline-block;
+    //     float: left;
+    //     margin: 15px 5px;
+    // }
+}
+// .bt-link{    
+//     font-size: 17px;
+//     font-weight: 700;
+//     line-height: 1.2;
+//     &.bt-center{
+//         width: 100%;
+//         text-align: center;
+//         display: block;
+
+//     }
+// } 
+// .bt-rosa{
+//     color: $primario;
+// }
+
+// .bt-lixeira {
+//     padding: 5px;
+//     float: left;
+//     margin: 10px 5px;
+//     min-width: 30px;
+//     font-size: 14px;
+//     color: rgba(0, 0, 0, 0.8);
+//     background: #e9e9eb;
+//     height: 30px;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+// .bt-salvar-fixed{
+//     position: fixed;z-index: 999;right: 0;top: 50%;margin-top: -30px;
+// }
+// button.rascunho{
+//     background: #f0f0f0;
+//     color: $dark;
+// }
+// button.item-bt-salvar-fixed{
+//     padding: .7em;
+//     i.icon.save{
+//         margin: 0;
+//     }
+// }
+// section.field{
+//     i.icon{
+//         margin:4px 10px 0 0;    
+//     }
+// }
+.bt-fechar-msg{    
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    padding: 15px;   
+    cursor: pointer; 
+    .icon-fechar-fino-branco{
+        width: 19px;
+        height: 24px;
+        display: block;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;        
+    }
+    .icon-fechar-fino-preto{
+        width: 19px;
+        height: 24px;
+        display: block;
+        color: black;
+        margin: 0;
+        padding: 0;        
+    }
+}

@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  eedis:
+    container_name: pandora_redis_ft
+    image: redis
+    command: redis-server --requirepass Redis2023!
+    networks:
+      - "pandora-network"
+    ports:
+      - "6379:6379"
+  mariadb:
+    container_name: pandora_mariadb_ft
+    image: mariadb
+    ports:
+      - "3306:3306"
+    networks:
+      - "pandora-network"
+    environment:
+        MARIADB_USER: pandora
+        MARIADB_DATABASE: pandora_fraseteca
+        MARIADB_ROOT_PASSWORD: Passwordhere
+    volumes:
+        - ${PWD}/dbdata:/var/lib/mysql
+
+networks:
+    pandora-network:
+        driver: bridge

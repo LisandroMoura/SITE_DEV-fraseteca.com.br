@@ -1,0 +1,14 @@
+.botao-opcoes{
+    padding: 9px 5px;
+    border: 1px solid $cinzaClaro;
+    line-height: 0.688;
+    border-radius: $borderradiusbotao;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover{
+        background: $amarelo;
+    }
+}

@@ -1,0 +1,57 @@
+.nuven-detag {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    background: #f3f3f38c;
+    padding:20px;
+}
+.caixatag-acriando-autor{
+    display: block;
+    width: 100%;    
+    margin: 30px 0;
+}
+.caixatag-acriando-autor>ul{
+    list-style-type: none;
+    padding: 0;
+}
+.caixatag-acriando-autor ul.item-nuvem>li{    
+    font-size: 14px;
+    margin: 2px 4px 2px 0;
+    color: #32373c;
+    display: inline-block;
+    line-height: 24px;
+    background: #e2e4e7;
+    transition: all .2s cubic-bezier(.4,1,.4,1);
+    border-radius: 8px;   
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    cursor: cell;
+    a{
+        padding: 2px 22px 2px 8px;
+        color: #068ab3;
+        cursor: pointer;
+    }
+    &.disable{
+        padding: 2px 22px 2px 8px;
+        color: #898891;
+        text-decoration: line-through;
+        pointer-events: none;
+    }
+}
+.caixatag-acriando-autor.adcionar{
+    background: #fff;
+    padding: 20px 0;
+}
+
+.caixatag-acriando-autor>ul>li>span.fechar{
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    cursor: pointer;
+}
+textarea.textarea_hidden{
+    display: none;
+}

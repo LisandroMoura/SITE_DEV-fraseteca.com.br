@@ -1,0 +1,9 @@
+@import "Input.scss";
+input.fa.fa-search.pesquisa.bordas-forms.hasPlaceholder{
+    line-height: 1.646;      
+    padding: 10px 22px;  
+    &::-webkit-input-placeholder{color:$cinzaMedio;}
+    &:-moz-placeholder{color:$cinzaMedio;}
+    &::-moz-placeholder{color:$cinzaMedio;}
+    &:-ms-input-placeholder{color:$cinzaMedio;}
+}

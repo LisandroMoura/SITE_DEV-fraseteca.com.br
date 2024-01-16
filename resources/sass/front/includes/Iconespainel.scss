@@ -1,0 +1,87 @@
+.ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    
+    &.ico-clipse-invert {
+        width: 41px;
+        height: 41px;
+        background-image: url("/images/icones/41x41/clipse-invert-v01.svg");
+    }
+
+    &.ico-cadeado {
+        width: 41px;
+        height: 41px;
+        background-image: url("/images/icones/41x41/cadeado-v03.svg");
+        &.ativo{
+            background-image: url("/images/icones/41x41/cadeado-on-v02.svg");
+        }
+        
+    }
+
+    &.ico-espera {
+        width: 41px;
+        height: 41px;
+        background-image: url("/images/icones/41x41/espera-v01.svg");
+    }
+    &.ico-new {
+        width: 41px;
+        height: 41px;
+        background-image: url("/images/icones/41x41/new-v01.svg");
+    }
+    &.ico-share {
+        width: 41px;
+        height: 41px;
+        background-image: url("/images/icones/41x41/share-v01.svg");
+    }
+
+
+    &.ico-lapis {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/lapis-v01.svg");
+    }
+
+    &.ico-add-capa {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/add-capa-v01.svg");
+    }
+
+    &.ico-pasta-privada {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/pasta-privada-v02.svg");
+    }
+
+
+    &.ico-exit{
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/exit-v01.svg");
+    }
+
+    &.ico-seta-abaixo{
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/seta-abaixo-v01.svg");
+    }
+
+    &.ico-seta-acima{
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/seta-acima-v01.svg");
+    }
+
+
+    &.ico-lixeira{
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/lixeira-v02.svg");
+    }
+
+
+    
+
+
+}

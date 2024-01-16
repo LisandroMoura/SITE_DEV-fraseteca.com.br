@@ -1,0 +1,88 @@
+@import "Modaldialog.scss";
+
+.wrapper--compartilhar {
+    width: 488px;
+    max-width: 100%;
+
+    background: $branco;
+    position: fixed;
+    z-index: 200;
+
+    left: 50%;
+    top: 30%;
+    margin-left: -244px;
+
+    border: 1px solid $cinzaClaro;
+    border-radius: 10px;
+    // border-bottom-left-radius: 10px;
+    // border-bottom-right-radius: 10px;
+    -moz-transition: $transition;-o-transition: $transition; transition: $transition;  
+
+    -webkit-transform: translate(500%);
+    transform: translate(500%);
+
+    &.ativado{
+        -webkit-transform: translate(0px);
+        transform: translate(0px);
+    }
+
+    ul {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(5, 47px);
+        justify-content: start;
+        margin-bottom: 17px;
+
+        li {
+            a {
+                display: block;
+            }
+        }
+    }
+
+    .incorporar {
+        display: block;
+        width: 100%;
+        font-weight: $medium;
+        font-size: $font-16;
+        color: $cinzaEscuro;
+        margin-bottom: 9px;
+    }
+
+    .copiar-link {
+        width: 100%;
+        position: relative;
+        clear: both;
+        border-radius: 10px;
+        border: 1.35px solid $cinzaClaro;
+        margin: 0;
+
+        input {
+            width: 360px;
+            max-width: 80%;
+            border: none;
+            font-size: $font-14;
+            color: $corSecundaria;
+            padding: 14px 20px 20px 20px;
+        }
+
+        a.btn.copiar {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: $font-14;
+            padding: 7px 10px;
+            font-weight: $semibold;
+            color: $corDeLink;
+            background: $branco;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper--compartilhar {
+        margin-left: -200px;
+        max-width: 400px;
+    }
+}

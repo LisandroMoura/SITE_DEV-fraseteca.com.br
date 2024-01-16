@@ -1,0 +1,148 @@
+.magic-input-selector {
+    cursor: pointer;
+
+    &.hide {
+        display: none;
+    }
+}
+
+.magic-input-frame {
+    display: none;
+    position: relative;
+    width: 100%;
+
+    &.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &.hide-buttons {
+        a.magic-buttons {
+            display: none;
+        }
+    }
+}
+
+span.ico.ico-lapis.titulo {
+    cursor: pointer;
+    pointer-events: all;
+    &.hide {
+        display: none;
+    }
+}
+
+h2.magic-input-selector.titulo.withIcon.editar.hide {
+    display: none;
+}
+
+h2.magic-input-selector {
+    line-height: 34px;
+    border-bottom: 1px solid $cinzaClaro;
+
+    &.withIcon {
+        width: fit-content;
+        display: inline;
+    }
+}
+input[type=text].magic-input,
+input.magic-input {
+    font-size: $font-24;
+    font-weight: $semibold;
+    color: $corSecundaria;
+    background: none;
+    border-radius: 0;
+    border: none;
+    padding: 20px 0;
+    border-bottom: 1px solid $cinzaClaro;
+    width: 100%;
+}
+
+button.updateArrayDoInputMagic {
+    display: none;
+}
+
+a.bt-cancel-magic {
+    position: absolute;
+    display: block;
+    background: $amarelo;
+    width: 47px;
+    height: 47px;
+    color: $corSecundaria;
+    top: -13px;
+    right: -50px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 100%;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &.out {
+        position: relative;
+        right: inherit;
+        top: inherit;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+}
+
+a.bt-confirm-magic {
+    position: absolute;
+    display: block;
+    background: $verde;
+    width: 47px;
+    height: 47px;
+    color: $branco;
+    top: -13px;
+    right: -110px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 100%;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &.out {
+        position: relative;
+        right: inherit;
+        top: inherit;
+        margin-top: 0;
+    }
+}
+
+.botoes-magic-out {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 58px;
+}
+
+.botoes-form-wrapper.to-hide-in-edit {
+    display: block;
+
+    &.ativo {
+        display: none;
+    }
+}
+
+.coluna-botoes-magic-out.to-show-in-edit {
+    display: none;
+
+    &.ativo {
+        display: block;
+    }
+}
+
+.input-tittulo.to-full-in-edit {
+    .ativo {
+        width: 100%;
+    }
+}

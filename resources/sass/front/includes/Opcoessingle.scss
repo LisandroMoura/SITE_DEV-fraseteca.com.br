@@ -1,0 +1,25 @@
+.opcoes--single{
+    ul{
+        display: grid;
+        align-content: center;
+        // grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        grid-template-columns: minmax(66px, 1.5fr) minmax(42px, 1fr) minmax(42px, 1fr) minmax(42px, 1fr);
+        align-items: center;
+        gap: 0 12px;
+        li{
+            a{
+                span.label{
+                    display: none;
+                }
+                span#totalCurtidasHtml{
+                    display: block;
+                    margin-right: 5px;
+                    font-size: $font-12;
+                }
+            }
+        }  
+    }
+}
+@import 'botoes/Botaoopcoes';
+@import 'Compartilhar.scss';
+

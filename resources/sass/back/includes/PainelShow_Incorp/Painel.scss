@@ -1,0 +1,274 @@
+.conteudo--admin{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    aside {
+        &#sidebar{
+            .menu-usuario{
+                display: flex;
+                flex-direction: column;
+                // align-items: start;
+                align-content: center;
+                h4{
+                    margin: 0;
+                }
+                
+                nav{
+                    .navbar-nav{
+                        li{
+                            &.separador{
+                                font-weight: $semibold;
+                                margin-top: 20px;
+                                color: $corSecundaria;
+                                border-bottom: 0;
+                            }
+                            border-bottom: 1px solid #dfdcdc;
+                            a{
+                                padding: 20px 10px 20px 8px ;
+                                display: flex;
+                                color: $corPrimaria;
+                                font-weight: $semibold;
+                                text-decoration: underline;
+                            }
+
+                            div.notification{
+                                background:$red;
+                                border-radius: 100%;
+                                color: #fff;    
+                                display: inline-block;
+                                line-height: 24px;
+                                height: 24px;
+                                width: 24px;
+                                text-align: center;
+                                span{
+                                    display: block;
+                                    padding: 0 5px;
+                                    font-size: 12px;        
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        &#content{
+            width: 100%;
+            .content-wrapper {
+                background: #efefef;
+                padding: 20px;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                h2{
+                    margin: 10px 0 10px 0;
+                }
+                ul {
+                    li {
+                        a{
+                            padding: 8px 5px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+                header{
+                    padding-bottom: 7px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid $cinzaClaro;
+                    span{
+                        font-size: $font-12;
+                    }
+                }
+            }
+        }
+    }
+}
+.full-width-content{
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+    table{
+        width: 100%;
+    }
+}
+
+.w15 {
+    width: 15%;
+}
+.w45 {
+    width: 45%;
+}
+.w50 {
+    width: 50%;
+}
+
+
+table{
+    thead{
+        th{
+            background: $cinzaClaro;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+    td{
+        margin-bottom: 5px; 
+        a{
+            text-decoration: underline;
+            color: $corSecundaria;
+        }
+    }
+}
+td.call-actions.w45 {
+    display: flex;
+    gap: 5px;
+}
+
+header{
+    position: relative;
+    .btn.bt-config{
+        float: right;
+        position: absolute;
+        right: 0;
+        top :0;
+        z-index: 7000;
+        &.icon-filter-svg{
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDI0Ny40NiAyNDcuNDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0Ny40NiAyNDcuNDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0yNDYuNzQ0LDEzLjk4NGMtMS4yMzgtMi42MjYtMy44ODEtNC4zMDEtNi43ODQtNC4zMDFINy41Yy0yLjkwMywwLTUuNTQ1LDEuNjc1LTYuNzg0LDQuMzAxDQoJYy0xLjIzOCwyLjYyNi0wLjg1LDUuNzMsMC45OTcsNy45N2w4OS4zNjEsMTA4LjM4NHY5OS45NGMwLDIuNTk1LDEuMzQxLDUuMDA1LDMuNTQ1LDYuMzczYzEuMjA4LDAuNzQ5LDIuNTc5LDEuMTI3LDMuOTU1LDEuMTI3DQoJYzEuMTM3LDAsMi4yNzgtMC4yNTksMy4zMy0wLjc4bDUwLjIwOC0yNC44ODVjMi41NTEtMS4yNjQsNC4xNjUtMy44NjMsNC4xNjktNi43MWwwLjA5OC03NS4wNjJsODkuMzY2LTEwOC4zODgNCglDMjQ3LjU5MywxOS43MTQsMjQ3Ljk4MiwxNi42MDksMjQ2Ljc0NCwxMy45ODR6IE0xNDMuMDk3LDEyMi44NzNjLTEuMTA1LDEuMzQtMS43MTEsMy4wMjMtMS43MTMsNC43NjFsLTAuMDk2LDczLjEwMw0KCWwtMzUuMjEzLDE3LjQ1M3YtOTAuNTQ2YzAtMS43NDEtMC42MDUtMy40MjgtMS43MTMtNC43NzFMMjMuNDA0LDI0LjY4MmgyMDAuNjUxTDE0My4wOTcsMTIyLjg3M3oiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K');
+            background-repeat: no-repeat;
+            height: 34px;
+            width: 38px;
+            background-position: center;
+            background-size: 50% 70%;
+        }
+    }            
+    .painel-config {
+        position: relative;
+        margin: 17px 0;
+        
+        .wrapp_config{
+            &.ativo{
+                display: block;
+            }
+            background:$cinzaMaisclarodatabela;
+            box-shadow: 0 5px 10px rgba(81, 81, 81, 0.3);
+            padding: 10px 15px;
+            ul{
+                padding: 0;
+                list-style: none;
+                margin-bottom: 20px;
+
+                li {
+                    &.separador{
+                        border-bottom: 1px solid #dfdcdc8c;
+                        margin-bottom: 25px;
+                    }
+                    .card.pesquisa{
+                        .well{
+                            position: relative; 
+                            form#form-search{
+                                display: grid;
+                                grid-template-columns: 5fr 1fr;
+                                gap: 15px;
+
+                                .check{
+                                    position: absolute;
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 290px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    // background: $cinzaClaro;
+                                    left: 0;
+                                    top: -25px;
+                                    font-size: $font-14;
+                                    padding: 5px;
+                                    .inline{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+                                        label{
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            input#s {
+                                margin: 0;
+                                border: 0;
+                                height: 55px;
+                                border: 1px solid #dfdcdc;                                 
+                            }
+                            .box-submit{
+                                background: $corPrimaria;
+                                border-radius: 10px;
+                                display: block;
+                                height: 55px;
+                                right: 0;
+                                top: 0;
+                                width: auto;
+                                z-index: 1;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;  
+
+                                input[type=submit] {
+                                    border: 0;
+                                    height: 50px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    opacity: 0;   
+                                    z-index: 4;                                 
+                                }
+                                label{
+                                    color: $branco;
+                                    margin: 0;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    z-index: 2;
+                                }
+
+                            }
+                            
+                        }
+                    }
+                    .card.filtro{
+                        border: 0;
+                        background: none;
+                        .well{
+                            ul{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                li{
+                                    display: inline-block;
+                                    width: 100%;                                            
+                                    font-size: 16px;
+                                    margin-bottom: 5px;                                                
+                                    &.separador{
+                                        display: none;
+                                    }
+                                    a{
+                                        padding:0px 15px 6px 15px;
+                                        width: 100%;
+                                        display: block;
+                                        border-bottom: 1px solid  $cinza;
+                                        &:hover{
+                                            background: $cinza;
+                                        }
+                                    }
+                                    span{
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

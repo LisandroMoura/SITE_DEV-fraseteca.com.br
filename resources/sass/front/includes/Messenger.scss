@@ -1,0 +1,85 @@
+@import 'Progressbar.scss';
+html.dark{
+    #mensagem {
+        &.sucesso{
+            background: $darkBranco;
+        }
+        &.error{
+            color: $darkBranco;
+        }
+    }
+}
+
+#mensagem {
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    position: fixed;    
+    left: 0;
+    z-index: 999999;
+    color: $corSecundaria;
+    box-shadow:rgba(0, 0, 0, 0.04) 0px 2px 2px 0px, rgba(0, 0, 0, 0.05) 0px 1px 5px 0px, rgba(0, 0, 0, 0.02) 0px 3px 1px -2px;
+    // box-shadow: rgba(0 0 0 / 4%) 0px 0px 2px 0px, rgba(0 0 0 / 5%) 0px 1px 5px 0px, rgba(0 0 0 / 2%) 0px 3px 1px -2px;
+    
+    &.sucesso{
+        background: $branco;
+        top: 0;
+    }
+    &.error{
+        display: block;
+        background:$taruim;
+        top: 0;
+        color: $branco;
+    }
+    &.atencao{
+        background: $amarelo;
+        color: $corSecundaria;
+        top: 0;
+    }
+    &.fechar{
+        top: -100px;
+    }
+    .corpo-da-mensagem{
+        display: grid;
+        margin: 0 auto;
+        width: auto;
+        padding: 9px 20px;
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        grid-template-columns: 1fr 30px;
+    }
+    .bt-fechar-msg {
+        padding:6px 5px 5px 5px;
+        cursor: pointer;
+        display: block;
+        float: right;
+        &:hover{
+            border-radius: 100%;
+        }
+    }
+    #fechar-error{
+        &:hover{
+            border-radius: 100%;
+            background: $corSecundaria;
+        }
+    }
+}
+.ico{
+    &.ico-close{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("/images/icones/16x16/fechar-v01.svg");
+        &.atencao{
+            background: url("/images/icones/16x16/fechar-v01.svg");
+        }
+        &.error{
+            background: url("/images/icones/16x16/fechar-v01.svg");
+            filter: invert(1);
+
+        }
+    }
+}
+

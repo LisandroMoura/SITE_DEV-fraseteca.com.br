@@ -1,0 +1,156 @@
+.card_helper_session{
+    .row{
+        .card_helper{
+            display: block;
+            margin: 30px 0 60px 0;
+            padding: 10px 60px 20px 60px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            width: 710px;
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            .ul_card_helper {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;                
+                min-height: 220px;
+                list-style: none;  
+                padding: 0;  
+                margin: 0;
+                overflow: hidden;
+                .card_helper_item{                    
+                    display: none;
+                    float: left;
+                    width: auto;
+                    max-width: 100%;
+                    padding: 0px;                    
+                    margin-right: 0px;
+                    background: #fff;
+                    .table{
+                        margin: 0;
+                        .table-cell{                            
+                            .icone_card_helper{
+                                display: block;
+                                width: 100%;
+                                float: left;
+                                margin: 15px 0;
+                                img{
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .texto_card_helper{
+                                display: block;
+                                float: left;   
+                                p{
+                                    line-height: 24px;
+                                    margin: 0 0 20px 0;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            } 
+            nav.nav_card_helper{
+                display: block;
+                width: 100%;
+                margin:0 0 20px 0;
+                ul{
+                    display: block;
+                    padding: 15px 20px 40px 20px;
+                    margin: 0 auto;
+                    list-style: none;  
+                    width: 370px;
+                    border-top: 1px solid #ccc;                                      
+                    li {
+                        a{
+                            display: inline-block;
+                            float: left;
+                            width: 28px;
+                            height: 28px;
+                            line-height: 24px;
+                            margin: 0 0 0 15px;
+                            border-radius: 100%;
+                            padding: 0px;
+                            border: 3px solid #fff;                            
+                            text-align: center;
+                            cursor: pointer;
+                            transition: $transition;
+                            -webkit-transition: $transition;
+                            -o-transition: $transition;
+                            -moz-transition: $transition;                            
+                            &:hover{
+                                color: $cinzaEscuro;
+                                border-color: $cinzaEscuro;
+                            }
+                            &.selected{
+                                color: $green;
+                                border-color: $green;
+                            }
+
+                        }
+                        &:nth-child(1) a {
+                            margin: 0;
+                        }
+                    }                        
+                }
+            }
+            .card_helper_barra{                 
+                width: 100%;
+                .card_helper_barra_loading{
+                    position: absolute;                   
+                    bottom: 0px;
+                    left: 0;
+                    display: block;
+                    height: 2px;
+                    background: $callAction;
+                    width: 0%;
+                    transition: all 1s linear ;
+                    -webkit-transition: all 1s linear;
+                    -o-transition: all 1s linear;
+                    -moz-transition: all 1s linear;                            
+                }
+                .card_helper_timer_retro{
+                    position: absolute;
+                    font-size: 12px;
+                    bottom: 0px;
+                    right: 0;
+                    padding: 2px 4px;
+                    background: rgba(218, 221, 221, 0.4);
+                    color: $placeholder;
+                }
+
+            }           
+        }
+    }
+}
+/* Fading animation */
+.fade_slider {
+    -webkit-animation-name: fade_slider;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade_slider;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade_slider {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade_slider {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media (min-width: 1200px){ }
+@media (max-width: 1024px) {}
+//principal Tablet
+@media (max-width: 768px) { 
+    .card_helper_session .row .card_helper {
+        padding: 10px 15px;
+    }  
+}
+/*Mobiles pequenos*/
+ @media (max-width: 440px) {}
+ @media (max-width: 360px) {}

@@ -1,0 +1,30 @@
+
+@import '../Breadcrumbs.scss';
+@import '../Opcoessingle.scss';
+@import '../Frasebox.scss';
+
+.frase-inserida{
+    font-weight: $regular;
+    font-size: $font-14;
+    color: $cinzaMaisescurodatabela;
+}
+.hover-download.only-mobile{
+    .botao-callaction.only-mobile{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+
+    h3.sub-titulos.ico-clipse{
+        span{
+            display: flex;
+            max-width: 280px;
+        }
+    }
+    // Projeto20221201 - Customização para as pictures. - 12-12-22
+    // Garantir que as imagens trancadas, quando não tenham o tamanho correto não estourem em mobile view
+    picture img{
+        max-width: 346px;
+        height: auto;
+    }
+}

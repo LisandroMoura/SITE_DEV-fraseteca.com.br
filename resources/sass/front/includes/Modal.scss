@@ -1,0 +1,87 @@
+div#before{
+    z-index: 200;    
+    position: absolute;
+}
+
+.modal,
+#modal{    
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: fixed;    
+    overflow: hidden;
+    top: 0;
+    left: 0; 
+    z-index: 700;   
+    
+    transition: all .25s ease-in-out;
+    &.onTop{
+        display: none;
+        z-index: 900;
+    }
+    &.ativado{
+        display: block;
+    }
+    .modal--wrapper{
+        position: absolute;
+        display: block;
+        top: 0;
+        width: 100%;
+        height: 100%;        
+        pointer-events: auto;
+        cursor: progress;
+        z-index: 8888;
+        background: #0000005c;
+        &.dark{
+            background: rgba(0,0,0,.7);
+        }
+        .modal--wrapper--container{
+            top: 50%;            
+            position: relative;
+            height:auto;
+            background: $branco;
+            border-radius: 10px;
+            width: 377px;
+            margin:-150px auto 0 auto;
+        }
+
+    }
+}
+a.modal_salvar{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    cursor: progress;
+    z-index: 1;
+    background:#00000038;
+    &.ativado{
+        display: block;
+    }
+    &:active{
+        background:none
+    }
+
+}
+
+// ::-webkit-input-placeholder.criar_pasta_body{color:$corSecundaria;}
+// :-moz-placeholder.criar_pasta_body{color:$corSecundaria;}
+// ::-moz-placeholder.criar_pasta_body{color:$corSecundaria;}
+// :-ms-input-placeholder.criar_pasta_body{color:$corSecundaria;}
+
+.criar_pasta_body{
+    &::-webkit-input-placeholder{color:$corSecundaria;}
+    &:-moz-placeholder{color:$corSecundaria;}
+    &::-moz-placeholder{color:$corSecundaria;}
+    &:-ms-input-placeholder{color:$corSecundaria;}
+}
+
+@media (max-width: 768px) {
+    #modal .modal--wrapper, .modal--wrapper{
+        background: #0000005c;
+    }
+}

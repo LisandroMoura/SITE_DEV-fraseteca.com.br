@@ -1,0 +1,152 @@
+.conteudo--capa--impressa {
+    // max-width: 1076px;
+    // max-height: 265px;
+
+    img {
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: center;
+        height: auto;
+        max-width: 100%;
+        max-height: 265px;
+        &.aguardando{
+            background-color: $cinzaMaisclarodatabela;
+            position: relative;
+            &::after{
+                content: "carregando...";
+                display: flex;
+                left: calc(50% - 51px);
+                position: absolute;
+                top: calc(50% - 8px)
+            }
+        }
+    }
+
+    &.institucional {
+        max-height: inherit;
+        margin-bottom: 20px;
+
+        img.institucional {
+            max-height: inherit;
+        }
+    }
+}
+
+.corpo-institucional {
+    font-size: $font-16;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+img.phrase-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+
+
+@import '../Breadcrumbs.scss';
+@import '../Opcoessingle.scss';
+@import '../Frasebox.scss';
+@import 'Anchor.scss';
+
+
+@media (max-width: 768px) {
+    section.margin-auto.max-width-content.conteudo.no-print.conteudo--capa--impressa {
+        max-width: 100%;
+        padding: 0;
+
+        img.margin-auto {
+            width: 100%;
+            border-radius: 0;
+
+            &.institucional {
+                max-width: max-content;
+            }
+        }
+    }
+
+    .conteudo--anchor {
+        &.with--capa {
+            grid-template-areas:
+                "ele1"
+                "ele2";
+            grid-template-columns: minmax(100%, 1fr) minmax(100%, 1fr);
+            padding: 0;
+
+            .conteudo--anchor--body {
+                border-radius: 0;
+
+                .conteudo--anchor--body--header {
+                    padding: 15px 17px 17px 17px;
+                }
+
+                ul {
+                    padding: 20px 17px;
+
+                    &.with--capa {
+                        padding: 17px 17px 17px 17px;
+                    }
+
+                    li {
+                        margin-bottom: 10px;
+
+                        .numeros {
+                            font-size: $font-14;
+                        }
+
+                        a {
+                            font-size: $font-14;
+                        }
+                    }
+                }
+            }
+
+            .conteudo--anchor--capa {
+                min-height: 200px;
+                border-radius: 0;
+                background-position: center;
+            }
+
+        }
+
+        .conteudo--anchor--body {
+            ul {
+                li {
+                    .numeros {
+                        font-size: $font-14;
+                    }
+
+                    a {
+                        font-size: $font-14;
+                    }
+                }
+            }
+        }
+    }
+
+    .corpo-institucional {
+        article.ativo {
+            padding: 15px 30px 15px 15px;
+
+        }
+    }
+
+    // Projeto20221201 - Customização para as pictures. - 12-12-22
+    // Garantir que as imagens trancadas, quando não tenham o tamanho correto não estourem em mobile view
+
+    img.phrase-image,
+    picture img {
+        //● Projeto20221203 = após retorno de rank do google, decidimos tirar a largura fixa de 346 do css - 30-12-22
+        // max-width: 346px;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+}

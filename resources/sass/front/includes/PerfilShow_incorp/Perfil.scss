@@ -1,0 +1,66 @@
+@import '../Biografiaperfil.scss';
+
+.conteudo--header {
+    display: grid;
+    grid-template-columns: 1fr minmax(485px, 1fr) 1fr;
+    grid-template-areas: "ele1 ele2 ele3";
+    align-items: flex-start;
+    grid-template-rows: 1fr;
+
+    .conteudo--header-ele1 {
+        grid-area: ele1;
+    }
+
+    .conteudo--header-ele2 {
+        grid-area: ele2;
+    }
+
+    .conteudo--header-ele3 {
+        grid-area: ele3;
+
+        &.flex-end {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.no-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.tags--wrapper {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+
+    .tags--col--title {
+        font-size: $font-18;
+        color: $corSecundaria;
+        font-weight: $semibold;
+        margin-bottom: 15px;
+    }
+}
+
+.wrapper-navegacao-perfil{
+    display: flex;
+    display: flex;
+    margin: 40px auto 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .conteudo--header {
+        grid-template-columns: 0fr 1fr auto;
+        grid-template-areas: "ele2 ele2 ele3";
+
+        .conteudo--header-ele3 {
+            &.flex-end {
+                justify-content: flex-start;
+            }
+        }
+    }
+}

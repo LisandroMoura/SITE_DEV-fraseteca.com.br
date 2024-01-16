@@ -1,0 +1,141 @@
+
+// importação de Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,700i,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+
+//html mais padrão - tentar substituir o bootstrap depois
+@import 'html';
+
+@import 'menu-lateral';
+@import 'area-pesquisa';
+@import 'topo-dosite';
+@import 'icones';
+
+@import 'botoes';
+@import 'inputs';
+@import 'anuncios';
+@import 'mensagens';
+@import 'navegacao';
+
+@import 'backend/sidebar';
+@import 'backend/menu';
+@import 'backend/content';
+
+@import 'backend/card_helper';
+
+@import 'backend/default-form';
+@import 'backend/toolbar';
+@import 'backend/usuario/perfil';
+@import 'backend/criando-autor.scss';
+
+//footer
+@import 'footer';
+//@import '../../public/fonts/css/fontello.css';
+@import '../../public/fonts/fontastic/styles.css';
+
+
+//crop
+@import 'crop';
+
+.wait{
+  display: none;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  &.show{
+    display: block;
+  }
+}
+body.site.back-end.painel.pagina.pagina-admin{
+  &.local::after {
+    display: block;            
+    position: fixed;
+    display: flex;
+    text-align: center;
+    top: -82px;
+    left: -80px;
+    width: 150px;
+    height: 150px;            
+    transform: rotate(-45deg);
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px;
+    content: "desenv";
+    background: $callAction;                    
+  }
+  &.producao{      
+    &::after {
+        display: block;            
+        position: fixed;
+        display: flex;
+        text-align: center;
+        top: -82px;
+        left: -80px;
+        width: 150px;
+        height: 150px;            
+        transform: rotate(-45deg);
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 15px;
+        content: "produção";
+        color: #fff;
+        background: #f1552e;
+    }
+  }
+}
+
+
+.only-mobile{display: none;} .no-mobile{display: block;}    
+.corpo-da-pagina{
+  background: $body-bg;  
+  font-size: $font-size-base;
+  font-family: $font-family-sans-serif;
+  color: $black;
+  
+}
+.botao-editar{
+  position: fixed;
+  top: 50%;
+  margin-top: -21px;
+  left: 0;
+  padding: 10px;
+  background: $primario;
+  a{
+    color: $branco;    
+  }
+  color: $branco;
+}
+.only-print {
+  display:none;
+}
+  
+.no-print { 
+  display:block; 
+}
+
+img{
+  max-width: 100%;    
+}
+
+body.site.back-end{    
+  display: block;
+  .container.corpo {
+      // max-width: 2400px;
+      // border: 1px solid #00f73545;
+  }
+  
+}
+
+@import 'active';
+@import 'mobile-backend';
+@import 'imprimir'

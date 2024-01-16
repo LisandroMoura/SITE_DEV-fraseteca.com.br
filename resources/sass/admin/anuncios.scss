@@ -1,0 +1,26 @@
+.anuncio{
+    display: block;    
+    margin: 0 auto ;    
+    border-radius: 5px;
+    &.teste{
+      width: 320px;
+    }
+    &.normal{
+      
+    }
+    &.left{
+      
+    }
+    &.article{
+      
+    }
+    .localhost{
+      background: #f3ffb3;
+      color: #343434;
+      padding: 20px 10px;
+      display: block; 
+      font-size: 14px;
+      max-width: 320px;
+      height: 280px;      
+    }
+}

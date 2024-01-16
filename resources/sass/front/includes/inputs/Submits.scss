@@ -1,0 +1,25 @@
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;    
+    background: none;
+    padding: 22px 29px;
+    -moz-transition: $transition;-o-transition: $transition; transition: $transition;
+    color: $preto;
+    font-weight: $semibold;
+    border: none;
+    &.padrao-call-action-with-validator{
+        &.ok{
+            opacity: 1;
+        }
+        &.nok{
+            pointer-events: none;   
+            color: $cinzaMedio;         
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    button, html input[type=button], input[type=reset], input[type=submit] {
+        padding: 17px 17px;
+    }
+}

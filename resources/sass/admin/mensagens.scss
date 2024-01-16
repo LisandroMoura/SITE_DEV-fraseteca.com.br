@@ -1,0 +1,264 @@
+.vue-js-modal{
+
+}
+.modal-zone {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;    
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    background: #0d0d0d52;
+}
+.hidden{
+    display: none;
+}
+.confirma {    
+    background: #fff;
+    padding: 0 0 5px 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -174px;
+    margin-top: -90px;    
+    max-width: 350px;
+    max-height: 90%;
+    box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+    border-radius: 2px;    
+    overflow-y: auto;
+    pointer-events: auto;
+    transition: .3s cubic-bezier(.25,.8,.25,1);
+    width: 100%;
+    z-index: inherit;
+}
+.confirma>.topo{
+    padding: 15px;
+    color: #fff;    
+}
+.confirma.aviso>.topo{
+    background: $amarelo;
+    color: #000;    
+}
+.confirma.cuidado>.topo{
+    background:  $corPrimaria;
+}
+.confirma.info>.topo{
+    background: $amarelo;
+    color: #000;    
+}
+
+.confirma>.box{
+    display: block;
+    width: 100%;
+}
+.box.texto {
+    padding: 16px;
+    text-align: center;
+}
+.box.botoes>.col{
+    display: inline-block;
+    float: right;
+    width: auto; 
+}
+.box.botoes>.col>a {
+    width: auto;
+    background: #fff;
+    float: right;
+    margin-right: 3px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #9e9e9e;    
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+}
+.box.botoes>.col>a.false:hover{
+    background: #9e9e9e1a;
+}
+
+.box.botoes>.col>a.true:hover{
+    background: #1976d21a;
+}
+.box.botoes>.col>a.true {
+    color: #1976d2;
+    margin: 0;
+}
+.box.botoes {
+    width: auto;
+    margin: 0 auto;
+    height: 50px;  
+} 
+//animacoes
+
+
+#mensagem{
+    display: block;
+    width: 100%;    
+    text-align: center;
+    // transform: translate(0, 0);
+    transition: all .25s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    .sucesso{
+        background: $verde;
+    }
+    .erro{
+        background: $taruim;
+    }
+    .atencao{
+        background: $amarelo;
+    }
+    
+    &.fechar{
+        top: -100px;
+    }
+    .corpo-da-mensagem{
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        padding:25px 15px 0 15px;
+        position: relative;
+        font-size: 18px;
+        &.sucesso{
+            color: #fff;
+        }
+        &.erro{
+            color: #fff;
+        }
+        strong{
+            font-size: 30px;
+        }
+
+    }
+}
+
+
+
+div#retorno_msg{
+    display: block;
+    width: auto;
+    max-width: 310px;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 10px;
+    .card{
+        .well{
+            padding: 20px;
+        }
+        background: #ffffff;
+        .barra-topo {
+            display: block;
+            width: 100%;
+            position: relative;
+            background: antiquewhite;
+            text-align: right;
+            a.bt_fechar,
+            .fechar_label{
+                display: inline-block;
+                text-align: right;
+                font-size: 14px;
+                font-weight: 100;
+            }
+            
+            .fechar_label{
+                height: 28px;
+                line-height: 28px;
+                margin-top: 0;
+                float: right;    
+                padding-right: 35px;
+            }
+            a.bt_fechar{
+                width: 30px;
+                height: 22px;
+                text-align: center;
+            }
+        }
+    }
+}
+h2.titulo-mensagem-sucesso{
+    color: #049451;
+    margin: 0 0px 20px 0;
+}
+h2.titulo-mensagem-erro{
+    color: #da3208;
+    margin: 0 0px 20px 0;
+}
+
+
+div#retorno_msg{
+    display: block;
+    width: auto;
+    max-width: 310px;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 10px;
+}
+div#retorno_msg>.card{
+    background: #ffffff
+}
+div#retorno_msg>.card>.barra-topo {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: $primario;
+    text-align: right;
+}
+div#retorno_msg>.card>.barra-topo >a.bt_fechar,
+div#retorno_msg>.card>.barra-topo >.fechar_label{
+    display: inline-block;
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 100;
+    }
+
+div#retorno_msg>.card>.barra-topo >.fechar_label{
+    height: 28px;
+    line-height: 28px;
+    margin-top: 0;
+    float: right;    
+    padding-right: 35px;
+    
+    color: #fff;
+}
+div#retorno_msg>.card>.barra-topo >a.bt_fechar{
+    width: 30px;
+    height: 22px;
+    text-align: center;    
+    position: absolute;
+    right: -3px;
+    top: 1px;
+}
+.bt-fechar-card{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: crimson;
+}    
+.bt-fechar-card>i:before{
+    display: block;
+    content: "x";
+    color: #fff;
+}
+
+div#retorno_msg>.card>.well{
+    padding: 20px;
+}
+h2.titulo-mensagem-sucesso{
+    color: #049451;
+    margin: 0 0px 20px 0;
+}
+h2.titulo-mensagem-erro{
+    color: #da3208;
+    margin: 0 0px 20px 0;
+}

@@ -1,0 +1,108 @@
+.texto-contato{
+    margin-bottom: 30px;
+    line-height: 1.5;
+    a{
+        font-weight: $semibold;
+        color: $corDeLink;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    margin:40px auto 0 auto;
+    font-size: $font-12 ;
+    font-weight: $regular;
+    color: $cinzaMaisescurodatabela;
+    .footer--item{
+        a{
+            color: $corDeLink;
+        }
+        
+        &.menu-footer{
+            display: flex;
+            gap: 0 70px;
+            margin-bottom: 30px;
+            li{
+                a{
+                    font-size: $font-16;
+                    font-weight: $medium;
+                    color: $corSecundaria;
+                }
+            }
+        }
+    }
+    .footer--bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "ele1 ele2 ele3";
+            margin-bottom: 15px;
+
+        .copyr{
+            grid-area: ele1;
+            display: flex;
+            align-items: center;
+        }
+        .sorrisofinal{
+            grid-area: ele2;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .socials{
+            grid-area: ele3;
+            display: flex;
+            justify-content: flex-end;
+            gap: 0 20px;
+            li{
+                a.icone-midias{
+                    display: block;
+                    transition: $transitionlenta;
+                    text-indent: -9000px;
+                    
+                }
+            }
+
+        }
+    }
+}
+@import 'Social.scss';
+
+@media (max-width: 768px) {
+    footer{
+        margin:24px auto 0 auto;
+        .footer--item{
+            &.menu-footer{
+                flex-direction: column;
+                gap: 30px 0;
+            }
+        }
+        
+        .footer--bottom{
+            grid-template-columns: auto 1fr ;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                "ele3 ele3" 
+                "ele1 ele2";
+            gap:12px 0;
+            .socials{
+                justify-content: center;
+                gap: 0 40px;
+            }
+            .copyr{
+                justify-content: flex-start;
+            }
+            .sorrisofinal{
+                justify-content:  flex-end  ;
+                img{
+                    float: right;
+                    display: block;
+                }
+            }
+
+        }
+        
+    } 
+}

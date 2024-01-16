@@ -1,0 +1,19 @@
+.breadcrumbs{
+    margin: 0 0 7px 0;
+    .separador,
+    .breadcrumbs--items{
+        font-size: $font-12;
+        font-weight: $medium;
+        color: $cinzaEscuro;
+    }
+    a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover{
+        font-size: $font-12;
+        font-weight: $medium;
+        color: $cinzaEscuro;
+    }
+}
+@media (max-width: 768px) {
+    .breadcrumbs{
+        margin: 0 0 5px 0;
+    }
+}

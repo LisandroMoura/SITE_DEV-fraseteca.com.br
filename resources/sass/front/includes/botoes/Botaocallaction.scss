@@ -1,0 +1,45 @@
+.botao-callaction {
+    border: 1px solid $corPrimaria;
+    border-radius: 10px;
+    display: block;
+    padding: 20px;
+    transition: $transition;
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+    text-align: center;
+    font-size: $font-14;
+    font-weight: $semibold;
+
+    &:hover {
+        background-color: $hoverCallaction;
+        border: 1px solid $verde;
+        color: $branco;
+        // border: 1px solid $branco;
+    }
+
+    &.pd-2030{
+        padding: 20px 30px;
+    }
+
+    &.grande {
+        width: 100%;
+    }
+    
+    &.max-content{
+        max-width: max-content;
+    }
+
+    &.grid{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        grid-template-columns: auto auto;
+        padding: 20px 30px;
+        width: max-content;
+        margin: 0;
+    }
+    &.only-mobile{
+        width: 100%;
+    }
+}

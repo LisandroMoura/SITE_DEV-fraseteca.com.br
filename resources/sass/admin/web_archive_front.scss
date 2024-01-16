@@ -1,0 +1,33 @@
+// Variables
+@import 'variables';
+@import 'bootstrap_reduce';
+
+//html e padrões de classes - tentar substituir o bootstrap depois
+@import 'html';
+@import 'menu-lateral';
+@import 'area-pesquisa';
+@import 'topo-dosite';
+@import 'botoes';
+
+@import 'inputs';
+// @import 'anuncios';
+// @import 'mensagens';
+@import 'navegacao';
+
+@import 'home';
+@import 'icones_single';
+
+//single
+@import 'single/relacionadas';
+// @import 'single/single';
+//@import 'single/categorias';
+// @import 'single/comentarios';
+ @import 'single/bio_opcoes';
+
+ @import 'pages/perfil';
+ 
+//footer
+@import 'footer';
+@import 'active';
+@import 'mobile';
+@import 'imprimir'

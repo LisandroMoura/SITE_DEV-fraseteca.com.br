@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .conteudo--header {
+        .conteudo--header-ele2 {
+            margin-bottom: 0;
+        }
+        .conteudo--header-ele3{
+            &.flex-end{
+                justify-content: flex-start;
+                margin-top: 17px;
+            }
+        }
+    }
+}

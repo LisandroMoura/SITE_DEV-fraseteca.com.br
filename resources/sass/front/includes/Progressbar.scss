@@ -1,0 +1,95 @@
+#mensagem{
+  &.error{
+    .progressbar .inner {
+      height: 3px;
+      animation: progressbar-countdown-nok;
+      /* Placeholder, this will be updated using javascript */
+      animation-duration: 40s;
+      /* We stop in the end */
+      animation-iteration-count: 1;
+      /* Stay on pause when the animation is finished finished */
+      animation-fill-mode: forwards;
+      /* We start paused, we start the animation using javascript */
+      animation-play-state: paused;
+      /* We want a linear animation, ease-out is standard */
+      animation-timing-function: linear;
+    }
+  }
+  &.atencao{
+    .progressbar .inner {
+      height: 3px;
+      animation: progressbar-countdown-atencao;
+      /* Placeholder, this will be updated using javascript */
+      animation-duration: 40s;
+      /* We stop in the end */
+      animation-iteration-count: 1;
+      /* Stay on pause when the animation is finished finished */
+      animation-fill-mode: forwards;
+      /* We start paused, we start the animation using javascript */
+      animation-play-state: paused;
+      /* We want a linear animation, ease-out is standard */
+      animation-timing-function: linear;
+    }
+    
+  }
+}
+
+#progress-bar{
+    pointer-events: none;
+}
+.progressbar {
+    width: 100%;
+    margin: 0px auto;    
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+  }
+  .progressbar .inner {
+    height: 3px;
+    animation: progressbar-countdown;
+    /* Placeholder, this will be updated using javascript */
+    animation-duration: 40s;
+    /* We stop in the end */
+    animation-iteration-count: 1;
+    /* Stay on pause when the animation is finished finished */
+    animation-fill-mode: forwards;
+    /* We start paused, we start the animation using javascript */
+    animation-play-state: paused;
+    /* We want a linear animation, ease-out is standard */
+    animation-timing-function: linear;
+  }
+  @keyframes progressbar-countdown {
+    0% {
+      width: 0%;
+      background:#90C255;
+    }
+    100% {
+      width: 100%;
+      background:#90C255;
+    }
+  }
+
+  @keyframes progressbar-countdown-nok {
+    0% {
+      width: 0%;
+      background:$branco;
+    }
+    100% {
+      width: 100%;
+      background:$branco;
+    }
+  }
+
+
+  @keyframes progressbar-countdown-atencao {
+    0% {
+      width: 0%;
+      background:#e7cf53;
+    }
+    100% {
+      width: 100%;
+      background:#e7cf53;
+    }
+  }
+
+

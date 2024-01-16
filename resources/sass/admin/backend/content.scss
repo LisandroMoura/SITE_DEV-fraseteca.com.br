@@ -1,0 +1,540 @@
+td.call-actions{
+    display: flex;
+    gap: 10px;
+}
+
+
+#content {
+    display: block;
+    padding: 0;
+    width: 100%;
+    margin: 0 0 0 15px;
+    max-width: 1106px;
+
+}
+
+.anchors {
+    display: block;
+    display: block;
+    position: fixed;
+    top: 84px;
+    right: 0; 
+}    
+
+.anchors label{
+    display: block;
+    margin: 0;
+    margin: 0 0px 0 50px;
+    background: $amarelo;
+    text-align: center;
+    color: $corSecundaria;
+}
+
+ul.ul-anchor-fixed{
+    list-style-type: disclosure-closed;
+}
+
+ul.ul-anchor-fixed li{
+    margin: 5px;
+    background: #fbf4f4;
+    color: #ccc;
+}
+ul.ul-anchor-fixed li a{
+    color: $corSecundaria;
+    display: flex;
+    padding:5px 0 ;
+}
+
+
+.linhas{
+    display: flex;
+    margin: 20px 0 ;
+    .row-linhas{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.content-wrapper {
+    background: #fff;
+    padding: 30px 40px 20px 40px;
+    margin-bottom: 30px;
+
+    &.frases {
+        //background: $body-bg;
+        background: #f3f0f0;
+        border-radius: 10px;
+    }
+}
+
+.texto_para_copiar {
+    display: none;
+}
+
+.container-corpo {
+    position: relative;
+    z-index: 50;
+
+    .recalc {
+        display: block;
+        background: $callAction;
+        color: #fff;
+        text-align: right;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 2px 8px;
+    }
+
+    .corpo-das-frases {
+        display: block;
+        margin-top: 30px;
+
+        .frase-box-options {
+            margin: 0 auto 40px auto;
+            min-height: 38px;
+            display: block;
+
+            .box-options{
+                max-width: 700px;
+                margin: 0 auto;
+            }
+        }
+
+        .frase-box {
+            position: relative;
+            display: block;
+            max-width: 700px;
+            margin: 0 auto 0px auto;
+            background: $branco;
+            border-radius: $radios;
+            border-top-left-radius: 0;
+            padding: 35px 40px;
+            font-size: 24px;
+            line-height: 24px;
+            //05_jan_21 Debug pagespeed 
+            //   -webkit-box-shadow: 0 6px 14px 0 rgba(0,0,0,0.04);          
+            //   box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.04) ; 
+            overflow: hidden;
+
+            &.imagem {
+                display: block;
+                .imagens{
+                    img{
+                        margin: 0 auto 20px auto;
+                        display: block;
+                    }
+                }
+            }
+
+
+            &.ads {
+                display: block;
+
+                img {
+                    margin: 0 auto 20px auto;
+                    display: block;
+                }
+            }
+
+            &.mb40 {
+                margin-bottom: 40px;
+            }
+
+            .status_frase {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                font-size: 16px;
+                padding: 2px 5px;
+                background: rgba(0, 0, 0, .04);
+
+                a {
+                    color: $callAction;
+                }
+
+                .naoindexa {
+                    color: $red;
+                }
+            }
+
+            .ordem {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: $primario;
+                color: $branco;
+                width: 35px;
+                height: 35px;
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                line-height: 35px;
+            }
+
+            div.autor {
+                margin-top: 10px;
+                color: #000000;
+                font-weight: 900;
+                font-size: 16px;
+                font-style: italic;
+            }
+        }
+
+        .row-frase-box {
+            margin: 0 0 24px 0;
+        }
+
+        .frase-rodape {
+            position: relative;
+            display: block;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+
+    }
+}
+
+ul.marcacao {
+    display: none;
+}
+
+.barra-botoes {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    float: left;
+    padding: 0px 5px;
+    width: auto;
+    border-radius: 4px;
+    padding: 1px;
+    display: flex;
+    white-space: pre-line;
+    -webkit-box-flex: 0;
+    user-select: none;
+    z-index: 1;
+    align-items: center;
+
+    &.em-edicao{
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        ul {
+            width: 100%;
+            li{
+                width: 100%;
+                a{
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+    &.favoritas {
+        right: none;
+        left: 175px;
+        bottom: 3px;
+
+        li>a {
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: contents;
+
+        li {
+            margin-bottom: 0;
+
+            &.item-botao {
+                margin-bottom: 0;
+            }
+
+            a {
+                background: $cinzaSuperclaro;
+                display: flex;
+                margin: 10px 5px;
+                padding: 5px;
+                font-size: $font-14;
+                color: $corSecundaria;
+                align-items: center;    
+            }
+
+            .divisor {
+                display: block;
+                float: left;
+                height: 30px;
+                border-left: 1px solid #e5e5e5;
+                margin: 10px 6px 0 4px;
+            }
+        }
+    }
+
+    .mostraBotoes {
+        float: left;
+        margin: 6px 6px 0px;
+    }
+}
+
+ul.lists {
+    padding: 0;
+    list-style: none;
+
+    li {
+        .tabela {
+            width: 100%;
+            height: 60px;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        color: $dark;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+        border: 1px solid $corHover;
+        border-radius: $radios;
+        margin-bottom: 20px;
+        padding: 0px 0;
+        width: 100%;
+
+        a {
+            font-family: $font-family-sans-serif;
+            color: $dark;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        &.pink {
+            a {
+                color: $primario;
+            }
+        }
+
+        &.cinza-escuro {
+            &.rascunho {
+                a {
+                    color: $primario;
+
+                    .status {
+                        color: $cinzaEscuro;
+                    }
+                }
+
+            }
+
+            color: $cinzaEscuro;
+
+            a {
+                color: $cinzaEscuro;
+            }
+        }
+
+        &.dark {
+            color: $dark;
+
+            a {
+                color: $dark;
+            }
+        }
+
+        &.publicado {
+            .tabela {
+                .table-cell {
+                    .row {
+                        .col-lg-2 {
+                            .status {
+                                color: #01bf01;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.revisao {
+            .tabela {
+                .table-cell {
+                    .row {
+                        .col-lg-2 {
+                            .status {
+                                color: #f75b00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.rejeitada {
+            .tabela {
+                .table-cell {
+                    .row {
+                        .col-lg-2 {
+                            .status {
+                                color: #ff0000;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.icone {
+    display: inline-block;
+    width: 26px;
+    height: 20px;
+    margin: auto;
+
+    i.icon {
+        margin: 0;
+    }
+}
+
+.link {
+    display: block;
+}
+
+//Listas Editar e Inserir
+#container_frases {
+    display: block;
+    width: 100%;
+    margin: 4px 0 0 0;
+
+    .card-frases {
+        margin-bottom: 40px;
+        padding: 0;
+
+        h2.numero-da-frase {
+            color: $dark;
+        }
+
+        .col {
+            padding: 0;
+        }
+
+        .bt-lixeira {
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
+
+        .col-lg-12.field-input {
+            padding: 0;
+        }
+
+        .open-emoji {
+            position: absolute;
+            bottom: 38px;
+            right: 28px;
+            background: #eceaea;
+            border-radius: 100%;
+            cursor: pointer;
+            opacity: 0.6;
+            width: 20px;
+            height: 20px;
+
+            path {
+                pointer-events: none;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//add frases style 
+.add-boxes {
+    display: none;
+    clear: both;
+    background: #fbf9f9;
+    position: absolute;
+    z-index: 666;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(81, 81, 81, 0.3);
+    top: -14px;
+    left: 50%;
+    margin-left: -170px;
+    min-width: 340px;
+
+    &.show {
+        display: block;
+    }
+
+    label {
+        display: inline-block;
+    }
+
+    select {
+        display: inline-block;
+        width: 44px;
+        margin: 0 3px;
+        padding: 0 10px 0 5px;
+        height: 34px;
+    }
+
+    button {
+        display: inline-block;
+    }
+
+    .add-boxes-sair {
+        display: block;
+        float: right;
+        cursor: pointer;
+
+        .bt-sair.bt-sair-emoji {
+            right: -12px;
+            top: -46px;
+            background: #fbf9f9;
+            border: 0;
+        }
+    }
+}
+
+a.btn.btn-add-frases.plus {
+    text-align: center;
+    margin: -10px auto 40px auto;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 18px;
+
+    .icone {
+        margin-right: 5px;
+        padding: 5px 0px 0 0px;
+        border-radius: 100%;
+        border: solid 5px #000;
+        height: 50px;
+        width: 50px;
+        color: #000;
+        font-size: 24px;
+    }
+}
+
+.subtitle {
+    margin: 40px 0;
+    font-size: 24px;
+    color: $black;
+}
+
+.papagaio {
+    margin-top: 20px;
+}
+
+.texto.papa {
+    margin-top: 40px;
+    font-size: 18px;
+}

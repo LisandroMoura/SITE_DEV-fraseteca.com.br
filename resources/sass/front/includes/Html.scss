@@ -1,0 +1,67 @@
+img.view-responsive.no-print{
+    display:none;
+}
+html{
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &.dark{
+        body{
+            background-color: $darkBranco;
+        }
+    }
+}
+body{
+    margin: 0;
+    background-color: $branco;
+    overflow-x:hidden;
+    color: $corSecundaria;
+}
+.row{
+    display: block ruby;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    clear: both;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.75rem;
+}
+div{display: block;}
+header {
+    margin: 0;
+}
+.table{
+    display: table;
+    height: 100%;
+}
+.table-cell {
+    vertical-align: middle;
+    height: 100%;
+    display: table-cell;
+}
+
+
+a:hover {
+    background-color: $cinzaSuperclaro;
+    text-decoration: none;
+}
+
+a{
+    color: $corSecundaria;   
+    &.padrao-icone{
+        &:hover{
+            background: none;
+        }
+    }      
+}
+
+
+a:active{
+    background: $cinzaEscuro;
+}
+
+

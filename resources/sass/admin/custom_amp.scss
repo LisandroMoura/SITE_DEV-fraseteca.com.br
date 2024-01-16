@@ -1,0 +1,34 @@
+//colocar aqui o oculos custom
+.topo-do-site .col-3.side-a .logo{
+    margin-left: 12px;
+}
+.wrapper-image{
+    text-align: center;
+}
+
+.corpo-home ul.ul-dados.comece li.col-lg-3 a.link-imagem{
+    amp-img{
+        border-radius: 100%;
+    }    
+}
+ul.ul-dados.thumbnail li .texto.col-lg-5.amp .table .table-cell a{
+    display: block;
+    font-size: 20px;
+    padding: 0 15px;
+    content: "";
+}
+
+.box-amp-img{
+    display: inline-block;
+    float: left;
+    border-radius: 5px;
+    margin: 0 15px 0 0;
+    width: 187px;
+    height: 154px;    
+    overflow: hidden;
+}
+@media (max-width: 768px){
+    ul.ul-dados.thumbnail li .texto.col-lg-5.amp .table .table-cell a {
+        font-size: 20px;
+    }
+}

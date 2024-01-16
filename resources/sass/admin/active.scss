@@ -1,0 +1,11 @@
+a:active{
+    background: #cec9c957;
+    // 
+    opacity: 0.4;  
+}
+
+li.nav-item {
+  >a:active {
+    border-radius: 100%;
+  }
+}

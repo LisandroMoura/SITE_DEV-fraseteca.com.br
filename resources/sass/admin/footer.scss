@@ -1,0 +1,89 @@
+footer.footer{   
+    padding-top: 40px;
+    padding-bottom:30px;
+    display: block;
+    float: left;
+    width: 100%;
+    .footer-copyrigth{
+        &.only-print{
+            display: none;
+        }
+        display: inline;
+        float: left;
+        width: calc(100% - 120px);
+        .icone-footer{
+            display: inline;
+            float: left;
+            width:65px;
+        }
+        .texto-footer{
+            display: inline;
+            float: left;
+            width: calc(100% - 65px);
+            padding:10px 0 0 20px;
+            .copyr{
+                display: block;
+
+            }
+            ul.menu-footer{
+                list-style: none;
+                display: block;
+                padding: 0;
+                margin:0;
+                li{
+                    display: inline;
+                    float: left;                    
+                    a{
+                        display: block;                            
+                        color: #000;
+                        font-weight: 700;
+                    }
+                    &:nth-child(1)>a{
+                        margin-left: 0;
+                    }
+                    &.separador{
+                        margin:0 5px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-socials{
+        display: inline;
+        float: left;
+        width: 120px;   
+        margin-top: 9px;  
+        .ul-footer-socials{
+            list-style: none;
+            display: block;
+            padding: 0;
+            margin:0;
+            li{
+                display: inline;
+                float: left;                    
+                a{
+                    display: block;
+                    width: 55px;   
+                    height: 55px;
+                    margin-right: 10px;
+                    text-indent: -9000px;
+                    &.icone-midias.facebook{
+                        background: url('/img/social/icone_facebook.png');
+                        // &:hover{
+                        //     background-image:url('img/social/icone_facebook.png');
+                        // }
+                    }
+                    &.icone-midias.pinterest{
+                        background:url('/img/social/icone_pinterest.png');
+                        // &:hover{
+                        //     background-image:url('img/social/icone_pinterest.png');
+                        // }
+                    }
+                }
+                &:nth-child(2)>a{
+                    margin-right: 0;
+                }
+            }
+        }   
+    }
+}

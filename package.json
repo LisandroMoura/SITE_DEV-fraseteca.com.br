@@ -1,0 +1,49 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "master": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --env master --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "master-development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --env master --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "master-watch": "npm run master-development -- --watch",
+        "CriandoAutores-development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --env CriandoAutores --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "CriandoAutores-production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --env CriandoAutores --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "CriandoAutores-watch": "npm run CriandoAutores-development -- --watch",
+        "Fraseteca1.0-production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --env Fraseteca1.0 --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "Fraseteca1.0-development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --env Fraseteca1.0 --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "Fraseteca1.0-watch": "npm run Fraseteca1.0-development -- --watch"
+    },
+    "devDependencies": {
+        "axios": "^1.6.1",
+        "bootstrap": "^4.6.2",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.8.1",
+        "eslint": "^8.51.0",
+        "jquery": "^3.7.1",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.5",
+        "mini-css-extract-plugin": "^2.7.6",
+        "popper.js": "^1.16.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.69.4",
+        "sass-loader": "^13.3.2",
+        "vue": "^3.3.8",
+        "vue-loader": "^17.3.0",
+        "vue-template-compiler": "^2.7.15",
+        "webpack": "^5.89.0"
+    },
+    "dependencies": {
+        "@livelybone/vue-datepicker": "^3.1.1",
+        "cropperjs": "^1.6.1",
+        "emoji-picker-element": "^1.18.4",
+        "v-emoji-picker": "^2.3.3",
+        "vue-toastr": "^2.1.2",
+        "vue2-touch-events": "^2.2.1",
+        "vuejs-clipper": "^2.1.0"
+    }
+}

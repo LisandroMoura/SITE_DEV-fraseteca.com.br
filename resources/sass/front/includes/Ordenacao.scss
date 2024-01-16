@@ -1,0 +1,40 @@
+.ordenacao{
+    position: absolute;
+    right: -23px;
+    top: 50%;
+    margin-top: -26px;
+
+    &.ambos{
+        margin-top: -77px;
+        ul{
+            li{
+                a{
+                    margin: 10px 0 ;
+                }
+            }
+        }        
+    }    
+    &.comcapa{
+        margin-top: -77px;
+        ul{
+            li{
+                a{
+                    margin: 17px 0 ;
+                }
+            }
+        }        
+    }
+
+    ul{
+        li{
+            a{
+                display: block;
+                text-align: center;
+                background: $branco;
+                border-radius: 100%;
+                padding: 11px;
+                border: solid 2px $cinzaClaro;
+            }
+        }
+    }
+}

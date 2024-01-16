@@ -1,0 +1,192 @@
+.corpo-do-login{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 600px;    
+    font-size: 0.9rem;
+    font-family: "Lato", sans-serif;
+    color: #020303;
+    &.verificar{
+        text-align: center;
+        width: 90%;
+        font-size: 18px;
+    }
+    .content{
+        header{
+            margin-bottom: 1.5rem;
+            .logo{
+                img{
+                    display: block;
+                    margin:30px auto 10px auto;
+                    max-width: 40px;
+                    max-height: 48px;
+                }
+            }
+            h2{
+                font-weight: 800;
+                font-size: 30px;
+                margin:0 auto 14px auto;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            strong {
+                &.bold{
+                    display: inline;
+                    padding: 0 2px 0 5px;
+                }
+            }
+        }
+        .verificar{
+            .col-lg-12{
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+        .form{
+            max-width: 400px;
+            .footer_form{
+                margin-bottom:30px;
+                .form-check{
+                    padding: 0;
+                }
+                a.esqueceu{
+                    color: $primario;
+                    font-weight: 700;
+                    font-size: 14px;
+                    float: right;
+                    line-height: 30px;
+                }                
+            }
+            input.submit {
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 20px;
+                padding: .9em 2.3em;
+                font-size: 20px;                
+            }
+
+            #bt_submit{
+                &.load{
+                    display: none;
+                }
+            } 
+            input #bt_load{
+                &.load{
+                    display: block;
+                }
+            }
+            .bt-load-criar-conta{                                
+                display: none;
+                font-weight: 700;                
+                font-size: 18px;
+                color: #fff;
+                border: 0px solid $primario;
+                border-radius: 5px;
+                box-shadow: 0 5px 10px rgba(81, 81, 81, 0.3);
+                background:$primario;
+                -webkit-transition: all 0.35s ease-in-out;
+                transition: all 0.35s ease-in-out;
+                margin: 0 auto;                
+                margin-bottom: 20px;
+                padding: .9em 2.3em;
+                font-size: 20px;
+                cursor: progress;
+                &.load{
+                    display: block;
+                }
+
+            }
+            .aceito-os-termos{
+                margin-bottom: 60px;
+            }
+            .botao-enviar{
+                margin-bottom: 80px;
+            }
+        }        
+        .registrar{       
+            margin: 20px auto 30px auto;     
+            text-align: center;
+            .label{
+                margin-bottom: 20px;
+                a{
+                    font-size: 18px;
+                    font-weight: 900;
+                    color: #000;                    
+                }
+            }            
+        }
+        &.reenviar{
+            header{
+                .logo{
+                    margin-bottom: 20px;
+                }
+            }
+            .form{
+                form{
+                    .row{
+                        input[type=submit]{
+                            font-size: 18px;
+                            padding: .9em ;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+    .imagem{
+        margin-bottom: 40px;
+        margin-top: 10px;
+        img{
+            max-width: 100%;
+        }
+    }      
+}
+
+span.ajuda{
+    font-size: 14px;
+    color: #ce9d5c;
+    padding: 0px 5px 5px 30px;
+    width: auto;
+    clear: both;
+    position: relative;
+    float: left;
+    display: inline-block;
+    &:before {
+        content: "!";
+        text-align: center;
+        font-size: 12px;
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 10px;
+        background: #ded810;
+        color: aliceblue;
+        border-radius: 100%;
+    }
+}
+.ocultar{
+    display: none;
+}
+@keyframes spin{
+    from    {
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg)
+    } to {
+       -webkit-transform:rotate(359deg);
+       transform:rotate(359deg)
+    }
+}
+.animate-spin{
+    -webkit-animation:spin 2s 3 linear;
+    animation:spin 2s 3 linear;
+    display:inline-block;
+    -webkit-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
+}    
+
+

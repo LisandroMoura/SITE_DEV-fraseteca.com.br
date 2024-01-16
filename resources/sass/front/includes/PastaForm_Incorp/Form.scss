@@ -1,0 +1,80 @@
+.pasta--form {
+    margin-bottom: 50px;
+
+    .pasta--form--create {
+        display: flex;
+        flex-direction: column;
+        max-width: 896px;
+        margin: 0 auto;
+
+        .pasta--form--create--itens {
+            display: grid;
+            grid-template-columns: minmax(auto,612px) minmax(auto,254px);
+            grid-template-areas: "ele1 ele3";
+            gap: 0 10px;
+            margin-bottom: 30px;
+
+            .field-input {
+                grid-area: ele1;
+                input{
+                    width: 100%;
+                }
+            }
+
+            .field {
+                grid-area: ele2;
+            }
+
+            .pasta-privada {
+                grid-area: ele3;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+                
+                .col-texto{
+                    h4{
+                        font-size: $font-16 ;
+                        font-weight: $semibold;
+                        color: $cinzaMaisescurodatabela;
+                        margin: 0 0 5px 0;
+                    }
+                    span{
+                        font-size: $font-14 ;
+                        color: $cinzaMaisescurodatabela;
+                    }
+                }
+            }
+        }
+
+        button.btSalvarPasta{
+            padding: 20px 15px;
+
+        }
+    }
+}
+
+@import '../Mudastatus.scss';
+@import 'Edit.scss';
+
+@media (max-width: 768px) {
+    .pasta--form {
+        margin-bottom: 40px;
+
+        .pasta--form--create {
+            max-width: 100%;
+            .pasta--form--create--itens {
+                margin-bottom: 17px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "ele1" "ele3";
+                .pasta-privada{
+                    justify-content: flex-start;
+                    margin-top: 17px;
+                }
+
+            }
+        }
+    }
+}

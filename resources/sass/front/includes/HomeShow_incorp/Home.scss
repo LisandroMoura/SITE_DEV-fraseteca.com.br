@@ -1,0 +1,90 @@
+@import '../botoes/Botaocallaction.scss';
+
+.conteudo--default,
+.conteudo--header--default {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo--default {
+    margin-bottom: 50px;
+
+    h1 {
+        font-weight: $regular;
+        margin-bottom: 10px;
+
+        span {
+            font-weight: $semibold;
+        }
+    }
+}
+
+.banner--principal {
+    background-image: url("/images/home/bg-banner-desk-v03.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    .banner--principal--middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .banner--principal--txt {
+            text-align: center;
+
+            h3 {
+                margin-bottom: 12px;
+                font-size: $font-24;
+                br{
+                    display:none;
+                }
+            }
+        }
+
+    }
+}
+
+.botao-callaction {
+    margin: 0 auto;
+    margin-top: -28px;
+}
+
+.tags--col--title {
+    display: none;
+}
+
+.wrapper-loadMaisListas{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .conteudo--default {
+        margin-bottom: 40px;
+        margin-top: 17px;
+    }
+    .banner--principal {
+        .banner--principal--middle {
+            .banner--principal--txt {
+                h3 {
+                    br{
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 560px) {
+    .banner--principal {
+        background-image: url("/images/home/bg-banner-mobile-v02.png");
+    }
+}

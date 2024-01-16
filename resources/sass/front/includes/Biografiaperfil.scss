@@ -1,0 +1,85 @@
+.biografia--perfil {
+    display: grid;
+    grid-template-columns: minmax(auto, 155px) 1fr;
+    grid-template-areas: "ele1 ele2";
+    align-items: center;
+
+    .biografia--perfil--col--avatar {
+        grid-area: ele1;
+    }
+
+    .biografia--perfil--col--texto {
+        grid-area: ele2;
+        padding-left: 40px;
+
+        .biografia--col--conteudo--texto-autor {
+            justify-content: flex-start;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            align-content: center;
+            a {
+                font-size: $font-22;
+                font-weight: $semibold;
+                color: $corSecundaria;
+            }
+
+            margin-bottom: 10px;
+
+            span.topusuario {
+                font-size: $font-12;
+                font-weight: $regular;
+                color: $cinzaMaisescurodatabela;
+                margin-top: 2px;
+            }
+        }
+
+        .biografia--col--conteudo--descricao {
+            color: $corSecundaria;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+
+        .biografia--col--conteudo--link {
+            a {
+                color: $cinzaMaisescurodatabela;
+                font-size: $font-12;
+                font-weight: $regular;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: max-content;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .biografia--perfil {
+        align-items: start;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "ele1"
+            "ele2";
+
+        .biografia--perfil--col--texto {
+            padding-left: 0px;
+            margin-top: 17px;
+            .biografia--col--conteudo--texto-autor {
+                margin-bottom: 17px;
+    
+                a {
+                    font-size: $font-22;
+                }
+            }
+    
+            .biografia--col--conteudo--descricao {
+                margin-bottom: 17px;
+            }
+        }
+    }
+}

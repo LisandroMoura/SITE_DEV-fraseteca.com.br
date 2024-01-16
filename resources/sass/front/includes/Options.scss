@@ -1,0 +1,146 @@
+.ul-post-options{
+    display: block;
+    width: 436px;
+    margin: 0 auto;
+    li {
+        a{
+            position: relative;
+            float: left;
+            display: block;
+            width: 75px;
+            height: auto;            
+            margin-right: 45px;
+            margin-bottom: 25px;
+            text-align: center;
+            padding: 20px 0 30px 0;            
+            span.label{
+                display: inline-block;
+                text-indent: -9000rem;
+            }
+            span.icon{
+                font-size: 23px;
+            }
+            &.last{
+                margin-right: 0;
+            }
+            .circulo-aviso{
+                position: absolute;
+                top: -21px;
+                left: 21px;
+                width: 35px;
+                height: 39px;
+                line-height: 39px;
+                background-image: url("/images/gota_35x39.png") ;
+                z-index: 777;  
+                color: $branco;              
+            }
+            .triangulo-aviso{
+                display: none;
+                position: absolute;
+                top: 4px;
+                left: 25px;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 20px solid $corPrimaria;
+                z-index: 222;                
+            }
+
+            &.btCurtirPost.enable{
+                cursor: pointer;
+                span.ico.ico-coracao-disable{
+                    display: none;
+                }
+            } 
+            &.btCurtirPost.disable{
+                // pointer-events: none;
+                .circulo-aviso{
+                    background-image: url("/images/gota_35x39_disable.png") ;
+                    color: $preto;
+                }
+                span.ico.ico-coracao-disable{
+                    display: inline-block;
+                }
+                span.ico.ico-coracao{
+                    display: none;
+                }
+            }
+            &.favoritaStore{
+                cursor: pointer;
+                span.ico.ico-estrela-disable{
+                    display: none;
+                }
+            } 
+            &.favoritaStore.disable{
+                
+                span.ico.ico-estrela-disable{
+                    display: inline-block;
+                }
+                span.ico.ico-estrela{
+                    display: none;
+                }
+            }
+
+            &.favoritaStore.nointeract{
+                pointer-events: none;
+                span.ico.ico-estrela-disable{
+                    display: inline-block;
+                    pointer-events: none;
+                }
+                span.ico.ico-estrela{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {    
+    ul.ul-post-options{
+        
+        li {
+            a{
+                margin-bottom: 30px;
+            }
+        }    
+    }  
+    .ul-post-options li a.btCurtirPost .circulo-aviso{
+        width: 24px;
+        height: 28px;
+        line-height: 28px;
+        top: -16px;
+        left: 26px;
+        font-size: 14px;
+        background-image: url("/images/gota_24x28.png") ;
+    }
+    .ul-post-options li a.btCurtirPost.disable .circulo-aviso{
+        width: 24px;
+        height: 28px;
+        line-height: 28px;
+        top: -16px;
+        left: 26px;
+        font-size: 14px;
+        background-image: url("/images/gota_24x28_disable.png") ;
+
+    } 
+}
+@media (max-width: 480px) {    
+    ul.ul-post-options{
+        width: 320px;
+        max-width: 100%;
+        li{
+            a{
+                margin-right: 6px;
+                margin-bottom: 3px;
+            }
+        }
+    }   
+}
+/*Mobiles pequenos*/
+ @media (max-width: 420px) {    
+    
+ }
+ @media (max-width: 380px) {
+    
+ }

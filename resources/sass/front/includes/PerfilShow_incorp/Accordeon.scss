@@ -1,0 +1,33 @@
+@import 'Itenspasta.scss';
+
+.accordeon--buttoons {
+    display: flex;
+    gap: 40px;
+
+    li {
+        a.bt-accordion {
+            display: inline-block;
+            font-size: $font-16;
+            color: $cinzaEscuro;
+            padding-bottom: 20px;
+
+            &.ativa {
+                font-weight: $semibold;
+                color: $corSecundaria;
+                border-bottom: 2px solid $corPrimaria;
+            }
+        }
+    }
+}
+
+.accordion {
+    display: grid;
+    .accordion--item{
+        display: none;
+        &.ativa{
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 768px) {}

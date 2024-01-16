@@ -1,0 +1,111 @@
+.botao-padrao{
+    padding: 20px 30px;
+    border: 1px solid $cinzaClaro;
+    color:$corSecundaria;
+    background: none;
+    font-size: $font-14;
+    font-weight: 600;
+    line-height: 0.688;
+    border-radius: $borderradiusbotao;
+    &:hover{
+        background: $amarelo;
+    }
+    &.mobile{
+        display: none;
+    }
+    &.no-border{
+        border: none;
+    }
+    &.border-red{
+        border: 1px solid $corPrimaria;
+        &:hover{
+            background: $corPrimaria;
+            color: $branco;
+        }
+    }
+    width: fit-content;
+    &.red{
+        background: $corPrimaria;
+        color: $preto;
+        width: auto;
+    }
+
+    &.seguindo{
+        background: $verde;
+        color: $branco;
+    }
+    
+    &.green{
+        background: $verde;
+        color: $branco;
+        width: auto;
+    }
+
+    &.yellow{
+        background: $amarelo;
+        color: $corSecundaria;
+        width: auto;
+    }
+    &.white{
+        background: $branco;
+        color: $corSecundaria;
+    }
+
+    &.margin-auto{
+        margin: 0 auto;
+    }
+
+    &.full{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &.ativo{
+        background: $cinzaSuperclaro;
+        color: $cinzaMaisescurodatabela;
+        font-weight: $medium;
+    }
+    &.no-interact{
+        pointer-events: none;
+        border: 0;
+    }
+    &.branco{
+        background: $branco;
+    }
+    &.com-icone{
+        padding: 15px;
+    }
+    &.flex{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    &.circular{
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.w50{
+            width: 50px;
+            height: 50px;
+            padding: 0;
+        }
+    }
+    &.nok{
+        opacity: .6;
+        pointer-events: none;
+    }
+}
+@media (max-width: 768px) {
+    .botao-padrao{
+        &.no-border-mobile{
+            border: none;
+            padding: 11px 0 11px 10px;
+            &:hover{
+                background: none;
+            }
+        }
+    }
+}

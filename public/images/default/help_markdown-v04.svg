@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="761"
+   height="658"
+   viewBox="0 0 201.34791 174.09583"
+   version="1.1"
+   id="svg6204"
+   sodipodi:docname="help_markdown-v04.svg"
+   inkscape:version="1.2.1 (8a69933317, 2022-10-28, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6206"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1603478"
+     inkscape:cx="323.60986"
+     inkscape:cy="314.12995"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6201">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="238.93005 : -3.7205863 : 1"
+       inkscape:vp_y="0 : 1040.1864 : 0"
+       inkscape:vp_z="557.94975 : -3.7205863 : 1"
+       inkscape:persp3d-origin="398.4399 : -33.902608 : 1"
+       id="perspective9667" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       sodipodi:type="inkscape:box3d"
+       id="g9711"
+       style="opacity:0.471898;fill:#000000;stroke:#00d4fb;stroke-linejoin:round;stroke-miterlimit:10.5;stroke-dashoffset:1;stroke-opacity:1"
+       inkscape:perspectiveID="#perspective9667"
+       inkscape:corner0="-4.1002751 : 0.049169089 : 0 : 1"
+       inkscape:corner7="-5.2932378 : -0.32126257 : 1.0412729 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path9717"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none;stroke-width:1.01236;stroke-linejoin:round"
+         inkscape:box3dsidetype="3"
+         d="m 187.47983,184.57808 14.29648,-1.87887 V 92.94924 L 187.47983,60.292983 Z"
+         points="201.77631,182.69921 201.77631,92.94924 187.47983,60.292983 187.47983,184.57808 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path9713"
+         style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-width:1.01236;stroke-linejoin:round"
+         inkscape:box3dsidetype="6"
+         d="M 187.47983,184.57808 V 60.292983 L 0.12679949,0.85935535 V 187.99756 Z"
+         points="187.47983,60.292983 0.12679949,0.85935535 0.12679949,187.99756 187.47983,184.57808 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path9715"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-width:1.01236;stroke-linejoin:round"
+         inkscape:box3dsidetype="5"
+         d="m 187.47983,184.57808 14.29648,-1.87887 -114.04605,1.56347 -87.60346051,3.73488 z"
+         points="201.77631,182.69921 87.73026,184.26268 0.12679949,187.99756 187.47983,184.57808 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path9723"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-width:1.01236;stroke-linejoin:round"
+         inkscape:box3dsidetype="11"
+         d="M 0.12679949,187.99756 87.73026,184.26268 V 65.774932 L 0.12679949,0.85935535 Z"
+         points="87.73026,184.26268 87.73026,65.774932 0.12679949,0.85935535 0.12679949,187.99756 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path9719"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none;stroke-width:1.01236;stroke-linejoin:round"
+         inkscape:box3dsidetype="14"
+         d="M 201.77631,182.69921 V 92.94924 L 87.73026,65.774932 V 184.26268 Z"
+         points="201.77631,92.94924 87.73026,65.774932 87.73026,184.26268 201.77631,182.69921 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path9721"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none;stroke-width:1.01236;stroke-linejoin:round"
+         inkscape:box3dsidetype="13"
+         d="M 187.47983,60.292983 201.77631,92.94924 87.73026,65.774932 0.12679949,0.85935535 Z"
+         points="201.77631,92.94924 87.73026,65.774932 0.12679949,0.85935535 187.47983,60.292983 " />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.5;font-variation-settings:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#0000fb;stroke-width:0.128446;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10.5;stroke-dasharray:none;stroke-dashoffset:1;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="10.336639"
+       y="34.579178"
+       id="text166"><tspan
+         sodipodi:role="line"
+         id="tspan164"
+         x="10.336639"
+         y="34.579178"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446">Paragrafo:</tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="44.104179"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1033">Negrito = **<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.128446"
+   id="tspan1025">palavra</tspan>**</tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="53.629177"
+         id="tspan168"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446">Itálico   = __ <tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.128446"
+   id="tspan1027">palavra</tspan>__</tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="63.154179"
+         id="tspan170"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446" /><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="72.679176"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1029">Títulos:</tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="82.204178"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1031">h1         = #Seu título</tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="91.729179"
+         id="tspan334"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446">h2         = ##Seu título</tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="101.25417"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1013" /><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="110.77917"
+         style="font-size:6.35px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1015">Link: </tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="120.30418"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1036"><tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.49792px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.128446"
+   id="tspan1038">texto entre [colchetes] e link entre chaves (http//) Ex:</tspan> </tspan><tspan
+         sodipodi:role="line"
+         x="10.336639"
+         y="129.82918"
+         style="font-size:5.29167px;fill:#000080;fill-opacity:1;stroke:none;stroke-width:0.128446"
+         id="tspan1017"> <tspan
+   style="font-size:4.7625px;stroke-width:0.128446"
+   id="tspan1023">acesse [frases para pensar](https://fraseteca.com.br/frases-para-pensar)</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;font-variation-settings:normal;vector-effect:none;fill:#e5271a;fill-opacity:0.251469;stroke:#0000fb;stroke-width:0.128446;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10.5;stroke-dasharray:none;stroke-dashoffset:1;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="8.9079361"
+       y="17.819855"
+       id="text1042"><tspan
+         sodipodi:role="line"
+         id="tspan1040"
+         x="8.9079361"
+         y="17.819855"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000000;fill-opacity:1;stroke-width:0.128446">Ajuda na Formatação de textos no padrão MarkDown</tspan></text>
+  </g>
+</svg>

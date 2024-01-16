@@ -1,0 +1,159 @@
+.anuncio {
+    margin: 30px 0;
+    display: flex;
+    min-width: 300px;
+    min-height: 350px;
+    width: 100%;
+
+    &.teste {
+        min-height: 300px;
+        background: #f1f1f1;
+        border: 2px dashed #d1d1d1;
+        width: 100%;
+        position: relative;
+
+        &::after {
+            color: $corSecundaria;
+            content: "anúncio";
+            position: absolute;
+            top: 50%;
+            left: calc(50% - (65.05px / 2));
+        }
+    }
+}
+
+.frase--box {
+    .ordem-da-frase{
+        color: $cinzaMedio;
+        font-size: $font-14;
+        font-weight: $regular;
+    }
+    &.pastas{
+        padding: 29px;
+        max-width: 706px;
+        margin: 0 auto 30px auto;
+        .frase{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto 20px auto;
+        }
+        .autor{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto 20px auto;
+            // &.sem-autor{
+            //     margin: 0;
+            //     padding: 0;
+            // }
+        }
+        .magic-input-frame{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto 20px auto;
+
+            textarea{
+                font-size: $font-18;
+                letter-spacing: .14px;
+                color: $corSecundaria;
+                background: $cinzaMaisclarodatabela;
+                border:0;
+                width: 100%;
+                padding: 0;
+                padding-top: 5px;   
+                line-height: 1.58;
+            }
+            input{
+                font-size: $font-14;
+                font-weight: $semibold;
+                color: $corSecundaria;
+                background: $cinzaMaisclarodatabela;
+                border:0;
+                width: 100%;
+            }
+            .open-emoji{
+                right: 0;
+                top: -24px;
+            }
+        }
+    }
+    
+    .tools {
+        &.pastas{
+            bottom: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        ul {
+            &.pastas{
+                grid-template-columns: 50px 50px;
+                gap:10px;
+                max-width: 165px;
+                &.editavel{
+                    grid-template-columns: 50px 50px 50px;
+                    display: none;
+                    &.ativo{
+                        display: flex;
+                    }
+                }
+                li {
+                    a{
+                        padding: 11px;
+                        border: 2px solid $cinzaClaro;
+                        border-radius: 100%;
+                        &.ativo{
+                            background: $cinzaSuperclaro;
+                        }
+                        &.bt-no-action-toggle-imagem{
+                            pointer-events: none;
+                            cursor: not-allowed;
+                            opacity: .2;
+                        }
+                    }
+                }
+            }
+
+            &.frases_em_edicao{
+                display: none;   
+                grid-template-columns: 50px 50px;
+                gap:10px;
+                &.ativo{
+                    display: flex;
+                }
+
+                li {
+                    a{
+                        padding: 11px;
+                        border: 2px solid $cinzaClaro;
+                        border-radius: 100%;
+                        justify-content: center;
+                        width: 50px;
+                        height: 50px;
+                        &.bt-salvar-frase-editada{
+                            background: $verde;
+                            border: 2px solid $verde;
+                            color: $corSecundaria;
+                            font-size: $font-14;
+                        }
+                        &.bt-action-cancelar{
+                            background: $amarelo;
+                            border: 2px solid $amarelo;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+}
+
+
+//principal Tablet
+@media (max-width: 768px) {
+    .frase--box.pastas{
+        margin: 0 9px 30px;
+        padding: 29px 30px;
+    }
+}

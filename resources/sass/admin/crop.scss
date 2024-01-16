@@ -1,0 +1,52 @@
+.crop_buttons_zone{
+    display: block;
+    margin: 0 0 20px 0;
+    .crop-button{
+        display: block;
+        float: left;
+        font-size: 18px;    
+        color: $dark;
+        font-weight: 700;
+        background: #ececec;
+        border-radius: 5px;
+        margin-right: 15px;
+        padding: .7em 25px;
+    }
+}
+
+.crop_ranger_zone{
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 340px;
+    height: 45px;
+    .rw{
+        display: inline-block;
+        float: left;
+        height: 45px;
+        .crop_img{            
+            margin: 12px 0 0 0;
+            &.before{
+                opacity: 0.4;
+            }
+        }
+    }
+    
+    .ranger_btn_zone{
+        display: inline-block;
+        float: left;
+        min-width: 300px;
+        .clipper-range{
+            .wrap{
+                .bar{
+                    border-radius: 100%;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #007bff;
+                    top: 4px;
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                }
+            }
+        }
+    }
+}

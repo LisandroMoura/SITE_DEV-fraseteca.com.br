@@ -1,0 +1,190 @@
+.ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    &.ico-seta-left {
+        width: 15px;
+        height: 15px;
+        background-image: url("/images/icones/15x14/seta-left-v01.svg");
+        transform: rotate(0deg);
+        &.disabled{
+            background-image: url("/images/icones/15x14/seta-left-off-v03.svg");
+        }
+    }
+
+    &.ico-seta-next {
+        width: 15px;
+        height: 15px;
+        background-image: url("/images/icones/15x14/seta-next-v01.svg");
+        &.disabled{
+            background-image: url("/images/icones/15x14/seta-next-off-v01.svg");
+        }
+    }
+
+    &.ico-fechar {
+        width: 16px;
+        height: 16px;
+        background-image: url("/images/icones/16x16/fechar-v01.svg");
+    }
+
+    &.ico-seta {
+        width: 9px;
+        height: 8px;
+        background-image: url("/images/icones/8x8/seta-v01.svg");
+        transition: $transition;
+    }
+
+    &.ico-home {
+        width: 31px;
+        height: 31px;
+        background-image: url("/images/icones/31x31/home-v01.svg");
+    }
+
+    &.ico-clipse {
+        width: 41px;
+        height: 41px;
+        background-image: url("/images/icones/41x41/clipse-v03.svg");
+    }
+
+    &.ico-minhas-frases {
+        width: 31px;
+        height: 31px;
+        background-image: url("/images/icones/31x31/minhas-frases-v02.svg");
+    }
+
+    &.ico-buscar {
+        width: 31px;
+        height: 31px;
+        background-image: url("/images/icones/31x31/buscar-v01.svg");
+    }
+
+    &.ico-minhas-frases-menu {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/minhas-frases-menu-v01.svg");
+    }
+
+    &.ico-link {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/link-v01.svg");
+    }
+
+    &.ico-download {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/download-v01.svg");
+    }
+
+
+    &.ico-home-menu {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/home-menu-v01.svg");
+    }
+
+    &.ico-config {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/config-menu-v01.svg");
+    }
+
+    &.ico-logout {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/fechar-v01.svg");
+    }
+
+    &.ico-selo {
+        width: 14px;
+        height: 15px;
+        background-image: url("/images/icones/14x15/selo.svg");
+    }
+
+    &.ico-copiar {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/copiar-v01.svg");
+    }
+
+    &.ico-camera {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/camera-v02.svg");
+    }
+
+    &.ico-imagem {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/imagem-v01.svg");
+        &.ativo {
+            background-image: url("/images/icones/24x24/imagem-on-v01.svg");
+        }
+    }
+
+
+    // &.ico-compartilhar {
+    //     width: 24px;
+    //     height: 24px;
+    //     background-image: url("/images/icones/24x24/compartilhar-v01.svg");
+    // }
+
+   
+
+    // &.ico-print {
+    //     width: 24px;
+    //     height: 24px;
+    //     background-image: url("/images/icones/24x24/print-v01.svg");
+    // }
+
+ 
+
+    &.lazy-background{
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        color: $cinzaMedio;
+        &.aguardando{
+            &::after{
+                content: "...";
+            }
+        }
+    }
+
+
+    // &.ico-curtir {
+    //     width: 24px;
+    //     height: 24px;
+    //     background-image: url("/images/icones/24x24/curtir-v01.svg");
+
+    //     &.curtido {
+    //         background-image: url("/images/icones/24x24/curtir-on-v01.svg");
+    //     }
+    // }
+
+ 
+    // &.ico-seguir {
+    //     width: 24px;
+    //     height: 24px;
+    //     background-image: url("/images/icones/24x24/seguir-v01.svg");
+
+    //     &.seguindo {
+    //         background-image: url("/images/icones/24x24/seguir-on-v01.svg");
+    //     }
+    // }
+
+    &.ico-seta-baixo {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/seta-baixo-v01.svg");
+    }
+    
+    &.ico-seta-acima {
+        width: 24px;
+        height: 24px;
+        background-image: url("/images/icones/24x24/seta-acima-v01.svg");
+    }
+
+}

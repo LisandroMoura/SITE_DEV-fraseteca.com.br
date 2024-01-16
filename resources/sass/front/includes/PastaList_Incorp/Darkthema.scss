@@ -1,0 +1,17 @@
+body.dark {
+    background: $darkFundo;
+    color:$branco;
+    .corpo-da-pagina.dark{
+        background: $darkFundo;
+        color:$branco;
+    }
+    //inverter
+    .logo-gif {
+        filter: invert(1)
+    }
+
+    input[type=text]
+    {
+        background: $darkEscuro;
+    }    
+}

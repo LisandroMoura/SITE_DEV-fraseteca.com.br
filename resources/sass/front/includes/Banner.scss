@@ -1,0 +1,71 @@
+.banner{
+    margin-top: 18px;
+    .banner--conteudo{
+        padding: 40px 15px;
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: minmax(auto,388px) minmax(auto,316px);
+        grid-template-areas: "ele1 ele2";
+        gap: 0 44px;
+        align-items: center;
+        .banner--conteudo--chamada{
+            grid-area: ele1;
+            h4{
+                font-weight: $semibold;
+                color: $corSecundaria;
+                font-size: $font-24;
+                padding: 10px 10px 8px 10px;
+                background: $branco;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 0px;
+                margin-bottom: 0;
+            }
+            p{
+                font-size: $font-16;
+                font-weight: $regular;
+                color: $corSecundaria; 
+                padding: 0px 10px 10px 10px;
+                background: $branco;
+                width: max-content;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                margin: 0;
+            }
+        }
+        .banner--conteudo--callaction{grid-area: ele2;}
+    }
+}
+@media (max-width: 768px) {
+    .banner{
+        margin-top: 22px;
+        .banner--conteudo{
+            padding: 20px 12px 30px 12px;
+            max-width: 850px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr ;
+            grid-template-areas:
+                    "ele1"
+                    "ele2";
+            .banner--conteudo--chamada{    
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                    padding: 10px;
+                    border-bottom-left-radius: 20px;
+                }
+                p{
+                    padding: 0 10px 15px 10px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@import 'botoes/Botaocallaction.scss'

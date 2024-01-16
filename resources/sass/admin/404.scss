@@ -1,0 +1,33 @@
+.page-404{
+    height: 100%;
+    .container{
+        &.corpo-404{
+            margin-bottom: 20px;
+            
+        }
+        .row{
+            .col{
+                .imagem-principal {
+                    text-align: center;                    
+                    img{
+                        margin: 0 auto;
+                    }
+                } // imagem principal  
+                
+                h2{
+                    margin: 30px auto 20px auto;
+                    color: $dark;
+                    span{
+                        font-weight: 300;
+                    }
+                } //h2 
+
+                p{
+                    color: $cinzaEscuro;
+                    line-height: 2rem;
+                    margin-bottom: 0;
+                } //p 
+            }
+        }
+    }
+}

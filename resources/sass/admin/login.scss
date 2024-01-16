@@ -1,0 +1,33 @@
+
+// importação de Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,700i,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+ 
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '../../public/fonts/css/fontello.css';
+
+// Variables
+@import 'variables';
+
+//html mais padrão - tentar substituir o bootstrap depois
+@import 'html';
+
+@import 'botoes';
+@import 'inputs';
+@import 'mensagens';
+
+@import 'login_form';
+@import '../sass/backend/avisos.scss';
+//footer
+@import 'footer';
+
+.only-mobile{display: none;} .no-mobile{display: block;}    
+.corpo-da-pagina{
+  background: $body-bg;  
+  font-size: $font-size-base;
+  font-family: $font-family-sans-serif;
+  
+}
+@import 'active';
+@import 'mobile';

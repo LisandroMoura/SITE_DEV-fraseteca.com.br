@@ -1,0 +1,201 @@
+
+.corpo-institucional{
+    a{
+        font-weight: $semibold;
+    }
+    // font-size: 16px;
+    // line-height: 28px;
+    &.ajuda{        
+        br {
+            display: none;    
+        }
+        p{
+            br{
+                display: block;
+            }            
+        }
+    }
+    margin-bottom: 60px;
+    
+    section {
+        border-top: 1px solid $corborda;
+        border-right: 1px solid $corborda;
+        border-left: 1px solid $corborda;    
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        &.last{
+            border-bottom: 1px solid $corborda;
+        }
+    }
+    header.acc {
+        font-size: $font-18; 
+        color: $corSecundaria; 
+        font-weight: $semibold;
+        margin-bottom: 0;      
+        padding: 15px ;
+        width: 1106px;
+        max-width: 100%;
+        cursor: pointer;
+        background: $branco;        
+        transition: 0.4s;   
+        margin: 0 auto;    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.2s ease-out;
+        
+        &::after {
+            content: ''; /* Unicode character for "plus" sign (+) */
+            float: right;
+            margin-top: 8px;
+            width: 16px;
+            height: 16px;
+            background: url("/images/icones/16x16/flecha-v01.svg");
+            transform: rotate(0deg);
+            transition: all 0.2s ease-out;
+        }
+        &.ativo{
+            color: $corPrimaria;
+            text-decoration: underline;
+            &::after {
+                transform: rotate(180deg);
+            }   
+        }
+        
+    }
+    article{
+        transition: all 0.2s ease-out;
+        background: $cinzaMaisclarodatabela;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        p{
+            padding: 20px 15px;
+            margin: 0 auto;
+            width: 1106px;
+            max-width: 100%;
+        }  
+        &.ativo{
+            height: auto;
+            opacity: 1;
+            p{
+                max-height: auto;
+            }
+        }
+        
+    }
+    &.amp-ativo{
+        article{
+            height: auto;
+            opacity: 1;
+            p{
+                max-height: auto;
+            }
+        }
+    }
+    form.form-contato{        
+        color: $corSecundaria;
+        max-width: 800px;
+        margin: 0 auto;
+        .form-field{
+            position: relative;
+            padding: 20px 0 0 0;
+            &.first{
+                margin-top: 20px;
+            }
+            input:not([type]), input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url]{
+                width: 100%;
+                color: $corSecundaria;
+                padding: 20px 28px;
+            }
+            textarea{
+                width: 100%;
+                border-radius: 14px;
+                padding: 20px 28px;
+                border: 1px solid $corborda;
+                font-size: 16px;
+                color: $corSecundaria;
+                button{
+                    &.g-recaptcha{
+                        width: 100%;
+                    }
+                }
+            }
+            select{
+                font-size: 16px;                
+                padding: 20px 28px;
+                width: 100%;
+                margin: 0 0 15px;
+                color: $corSecundaria;       
+                font-weight: 700;  
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                position: relative;
+                background: $branco;
+                border: 1px solid $cinzaClaro;
+                border-radius: 10px;
+            }
+            &.field-assunto::after{
+                content: "";
+                position: absolute;
+                top: 50px;
+                right: 28px;                    
+                width: 8px;
+                height: 8px;
+                background: url("/images/icones/8x8/seta-v01.svg");
+                // transform: rotate(180deg);
+                // -ms-transform: rotate(180deg);
+                // -webkit-transform: rotate(180deg);
+                // -moz-transform: rotate(180deg);
+                // -o-transform: rotate(180deg);                
+                z-index: 2;
+            }
+        }
+        br{
+            display: none;
+            &.mostrar{
+                display: block;
+            }
+        }
+    }
+    .form-wapper{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    button.g-recaptcha {        
+        display: block;
+        width: 100%;
+        margin: 40px 0;        
+        pointer-events: none;
+        opacity: .6;
+        color: $corPrimaria;
+        border: 1px solid $corPrimaria;
+        background: $branco;
+        &.ok{
+            pointer-events: painted;
+            opacity: 1;
+            background: $corPrimaria;
+            color: $preto;
+        }
+
+    }
+    .g-recaptcha > div{
+        margin: 0 auto;
+    }  
+    ::-webkit-input-placeholder{font-style: normal; color: $corSecundaria;font-weight: 400; font-size: 16px;}
+    :-moz-placeholder{font-style: normal; color: $corSecundaria;font-weight: 400;font-size: 18px}
+    ::-moz-placeholder{font-style: normal; color: $corSecundaria;font-weight: 400;font-size: 18px}
+    :-ms-input-placeholder{font-style: normal;color: $corSecundaria; font-weight: 400;font-size: 18px}  
+}
+
+.wrapper-image-bg.no-print.autoload.contato{
+    max-height: 300px;
+}
+@media (max-width: 767px) {
+    .corpo-institucional{
+        header.acc{
+            padding: 15px 30px 15px 15px;
+        }
+    }
+}

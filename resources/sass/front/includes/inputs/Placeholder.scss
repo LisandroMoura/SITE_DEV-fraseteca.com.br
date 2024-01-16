@@ -1,0 +1,35 @@
+::-webkit-input-placeholder {
+    color: $cinzaMedio;
+}
+
+:-moz-placeholder {
+    color: $cinzaMedio;
+}
+
+::-moz-placeholder {
+    color: $cinzaMedio;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $cinzaMedio;
+}
+
+.login-objeto,
+.criar_pasta_body {
+    &::-webkit-input-placeholder {
+        color: $corSecundaria;
+    }
+
+    &:-moz-placeholder {
+        color: $corSecundaria;
+    }
+
+    &::-moz-placeholder {
+        color: $corSecundaria;
+    }
+
+    &:-ms-input-placeholder {
+        color: $corSecundaria;
+    }
+}

@@ -1,0 +1,61 @@
+.header.grid{
+    display: grid;
+    grid-template-areas: "sidea sideb sidec";
+    grid-template-columns: 30.12% 39.763% 30.12%;
+    align-items: center;
+    margin: 12px auto;
+    .header--side--a {grid-area: sidea;}
+    .header--side--b {grid-area: sideb;}
+    .header--side--c {grid-area: sidec;}
+}
+
+@import 'inputs/Inputpesquisa.scss';
+@import 'botoes/Botaopesquisa.scss';
+@import 'botoes/Botaopadrao.scss';
+
+@import 'Menuusuario';
+
+.conteudo--header {
+    display: grid;
+    grid-template-areas:
+        "ele1 ele2";
+    grid-template-columns: 3.6fr 1.02fr;
+    // grid-template-rows: 1fr 1fr;
+    align-items: center;
+    margin-bottom: $mbtitulos;
+    margin-top: 30px;
+
+    .lado--a {
+        grid-area: ele1;
+    }
+
+    .lado--b {
+        grid-area: ele2;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    // .conteudo--header-ele3 {
+    //     grid-area: ele3;
+    // }
+}
+
+@media (max-width: 768px) {  
+    .header.grid{
+        margin: 17px auto;
+        grid-template-areas: "sidea sidea sidec" "sideb sideb sideb";
+        grid-template-columns: 10fr 2fr;
+        .header--side--b{margin-top: 17px;}
+    }
+    .conteudo--header {
+        margin-top: 17px;
+        grid-template-areas:
+            "ele1 ele1"
+            "ele2 ele2"
+            "ele3 ele3";
+        grid-template-rows: auto;
+        .conteudo--header-ele2 {
+            margin-bottom: 13px;
+        }
+    }
+}

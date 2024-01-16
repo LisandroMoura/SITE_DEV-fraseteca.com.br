@@ -1,0 +1,218 @@
+@import '../Mudastatus.scss';
+@import '../Jsupload.scss';
+@import '../Ajuda.scss';
+@import '../Avisos.scss';
+
+form{
+    width: 100%;
+}
+
+.perfil--form {
+    display: flex;
+    justify-content: center;
+    .avatar--crop{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        .imagem-avatar{
+            position: relative;
+            width: 200px;
+            margin: 0 auto;
+            img{
+                max-width: 200px;
+                max-height: 200px;
+                border-radius: 100%;
+            }
+        }
+        .imagem-avatar a.bt-upload-image {
+            display: block;
+            position: absolute;
+            bottom: 3px;
+            right: 7px;
+            background: $cinzaMaisclarodatabela;
+            border-radius: 100%;
+            padding: 12px;
+        }
+    }
+}
+.campos{
+    &.alterar--senha{
+        margin-bottom: 10px;
+    }
+    .body-row-input{
+        .container-section {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            &.mb-50{
+                margin-bottom: 50px;
+            }
+            &.mb-10{
+                margin-bottom: 10px;
+            }
+            .aviso-ao-excluir {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            .itens{
+                display: grid;
+                align-items: center;
+                grid-template-columns: minmax(auto,0.7fr) 1fr 0;
+                width: 100%;
+
+                &.flex-start{
+                    align-items: start;
+                    align-items: flex-start;
+                }
+
+                .label-area{
+                    &.pd-10{
+                        padding-top: 10px;
+                    }
+                    label{
+                        margin: 0;
+                    }
+                }
+                .field-input{
+                    select,
+                    textarea,
+                    input{
+                        color: $cinzaMaisescurodatabela;
+                        font-weight: $regular;
+                    }
+                }
+                
+                .with-contador{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    textarea{
+                        min-height: 60px;
+                        background: #faf1f36e;
+                        border-radius: 0;
+                    }
+                }
+            }
+            .botao-salvar{
+                display: flex;    
+                width: 100%;
+                max-width: 335px;
+                margin: 20px auto 10px auto;
+            }
+        }
+    }
+}
+
+#cropjs-zone.avatar-cropjs {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#cropjs-zone {
+    max-height: 350px;
+    overflow: hidden;
+    display: none;
+    position: relative;
+}
+
+.perfil--update--senha{
+    display: flex;
+    justify-content: center;
+    form{
+        width: 100%;
+    }
+}
+
+.perfil--form--excluir{
+    display: flex;
+    justify-content: center;
+    form{
+        width: 100%;
+    }
+
+}
+
+.field-form{
+    &::-webkit-input-placeholder{color:$cinzaMaisescurodatabela;}
+    &:-moz-placeholder{color:$cinzaMaisescurodatabela;}
+    &::-moz-placeholder{color:$cinzaMaisescurodatabela;}
+    &:-ms-input-placeholder{color:$cinzaMaisescurodatabela  ;}
+}
+
+.input_trocar_senha{
+    &::-webkit-input-placeholder{color:$corSecundaria;}
+    &:-moz-placeholder{color:$corSecundaria;}
+    &::-moz-placeholder{color:$corSecundaria;}
+    &:-ms-input-placeholder{color:$corSecundaria;}
+}
+
+.form--update--pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .campos{
+        max-width: 100%;
+        width: 333px;
+        display: flex;
+        flex-direction: column;
+        .campo{
+            margin-top: 20px;
+            input.input_trocar_senha{
+                width: 100%;
+                font-size: $font-14;
+                color: $corSecundaria;
+            }
+        }
+        button#btSalvarTrocaDeSenha{
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    
+
+}
+input#abre_trocar_senha {
+    cursor: pointer;
+    background: url(/images/icones/15x14/seta-next-v01.svg);
+    background-repeat: no-repeat;
+    background-position-x: 160px;
+    background-position-y: 10px;
+    line-height: 30px;
+    font-size: 28px;
+    width: 180px;
+    color: $cinzaMaisescurodatabela;
+    padding: 0;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .campos{
+        .body-row-input{
+            .container-section {
+                .itens{
+                    .label-area{
+                        label{
+                            font-size: $font-14;
+                        }
+                    }
+                    .field-input{
+                        select, input{
+                            font-size: $font-14;
+                        }
+                    }
+                    .with-contador{
+                        textarea{
+                            min-height: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,345 @@
+// Projeto20221105 - 23-11-22 LM - Estilo do campo Introdução na página e Campo caixa de parágrafo (no intem)
+.conteudo-paragrafo{
+    display: block;
+    width: 100%;
+    margin: 45px auto;
+    font-size: $font-18;
+    line-height: 1.58;
+    letter-spacing: 0.14px;
+    a{
+        color: $corSecundaria;
+        text-decoration: underline;
+        font-weight: $semibold;
+        padding: 10px 3px;
+    }
+    &.margin-maior{
+        margin: 95px auto 45px auto;
+        &.conteudo--paragrafo--item{
+            margin: 0px auto 45px;
+        }
+    }
+}
+
+.anuncio {
+    margin: 30px 0;
+    display: flex;
+    min-width: 300px;
+    min-height: 350px;
+    width: 100%;
+    &.teste {
+        min-height: 300px;
+        background: #f1f1f1;
+        border: 2px dashed #d1d1d1;
+        width: 100%;
+        position: relative;
+
+        &::after {
+            color: $corSecundaria;
+            content: "anúncio";
+            position: absolute;
+            top: 50%;
+            left: calc(50% - (65.05px / 2));
+        }
+    }
+}
+
+html.dark{
+    .frase--box .tools ul,
+    .frase--box {
+        background-color: $darkBranco;
+    }
+    
+}
+
+blockquote{
+    padding: 0;
+    margin: 0;
+}
+
+
+img.phrase-image,
+picture img {
+    //● Projeto20221203 = após retorno de rank do google, decidimos tirar a largura fixa de 346 do css - 30-12-22
+    // max-width: 346px;
+    max-width: 100%;
+    height: auto;
+}
+
+.frase--box {
+    position: relative;
+    background: $branco;
+    border-radius: 14px;
+    padding: 29px 29px 40px 29px;
+    border: 1px solid $corborda;
+    display: flex;
+    margin-bottom: 45px;
+    flex-direction: column;
+
+
+    .ordem-da-frase{
+        color: $cinzaMedio;
+        font-size: $font-14;
+        font-weight: $regular;
+    }
+    &.pastas{
+        padding: 29px;
+        max-width: 706px;
+        margin: 0 auto 30px auto;
+        // &.item_1{
+        //     margin-top: -40px;
+        // }
+        .frase{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto 20px auto;
+        }
+        .autor{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto 20px auto;
+            // &.sem-autor{
+            //     margin: 0;
+            // }
+        }
+        .magic-input-frame{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto 20px auto;
+        }
+    }
+    
+    .frase {
+        font-size: $font-18;
+        line-height: 1.58;
+        letter-spacing: 0.14px;
+        max-width: 688px;
+    }
+
+    .texto_para_copiar {
+        display: none;
+    }
+
+    .autor {
+        margin-top: 14px;
+        font-weight: $semibold;
+        font-size: $font-14;
+
+        a {
+            color: $corSecundaria;
+            text-decoration: underline;
+        }
+    }
+
+    .frase_imagem {
+        amp-img,
+        img {
+            max-width: 100%;
+            // width: auto;
+            height: auto;
+            margin-bottom: 29px;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .tools {
+        bottom: -14px;
+        position: absolute;
+        width: calc(100% - 58px);
+
+        &.pastas{
+            bottom: 0;
+            position: relative;
+            width: 100%;
+        }
+
+        ul {
+            background: $branco;
+            display: grid;
+            grid-template-columns: 72px 83px 72px;
+            justify-items: center;
+            justify-content: center;
+            gap: 60px;
+            max-width: 407px;
+            margin: 0 auto;
+            &.frases{
+                grid-template-columns: 72px 72px 113px;
+                max-width: 434px;
+            }
+
+            &.pastas{
+                grid-template-columns: 50px 50px;
+                gap:10px;
+                max-width: 165px;
+                &.editavel{
+                    grid-template-columns: 50px 50px 50px;
+                    display: none;
+                    &.ativo{
+                        display: flex;
+                    }
+                }
+                li {
+                    a{
+                        padding: 11px;
+                        border: 2px solid $cinzaClaro;
+                        border-radius: 100%;
+                    }
+                }
+            }
+
+            &.frases_em_edicao{
+                display: none;   
+                &.ativo{display: flex;}
+            }
+
+            li {
+                a {
+                    width: auto;
+                    text-align: center;
+                    color: $cinzaEscuro;
+                    font-size: $font-12;
+                    font-weight: $medium;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    line-height: 25px;
+
+                    &.favoritas {
+                        >span.ico.ico-estrela-pequena-amarela {
+                            display: none;
+                        }
+                    }
+
+                    &.jacurtida {
+                        pointer-events: none;
+
+                        span.ico.ico-estrela-pequena-amarela {
+                            display: block;
+                        }
+
+                        span.ico.ico-estrela-pequena {
+                            display: none;
+                        }
+                    }
+
+                    &.copiar {
+                        width: auto;
+
+                        &.na-frase {
+                            margin-right: 0px;
+                        }
+                    }
+
+                    // &.compartilhar {
+                    //     &.na-frase {}
+                    // }
+
+                    span.label {
+                        display: inline-block;
+                        padding-left: 10px;
+                    }
+
+                    &:before {
+                        color: $corSecundaria;
+                        vertical-align: middle;
+                        font-size: 21px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tool-salvar {
+        display: none;
+        position: absolute;
+        width: 377px;
+        max-width: 100%;
+        padding: 0;
+        left: 50%;
+        margin-left: -195px;
+        bottom: 2px;
+        // border-bottom-left-radius: 10px;
+        // border-bottom-right-radius: 10px;
+        z-index: 200;
+        &.ativado {
+            display: block;
+        }
+    }
+}
+
+.convite {
+    padding: 29px 29px 40px;
+    font-size: $font-18;
+    font-weight: $regular;
+    a{
+        color: $corSecundaria;
+        font-weight: $semibold
+    }
+}
+
+// Customizações para a tag picture em caso de lazyload
+div.picture{
+    display: flex;
+    justify-content: center;
+    img.phrase-image{
+        &.aguardando{
+            background: $cinzaMaisclarodatabela;
+        }
+        position: relative;
+        &::after{
+            display: flex;
+            content: "carregando...";
+            position: absolute;
+            top: calc(50% - 8px);
+            left: calc(50% - 51px);
+        }
+    }
+    a{
+        width: 612px;
+        max-width: 100% ;
+        img{
+            &.aguardando{
+                background: $cinzaMaisclarodatabela;
+            }
+            position: relative;
+            &::after{
+                display: flex;
+                content: "carregando...";
+                position: absolute;
+                top: calc(50% - 8px);
+                left: calc(50% - 51px);
+            }
+        }
+    }
+}
+
+//principal Tablet
+@media (max-width: 768px) {
+    .frase--box {
+        padding: 17px 17px 27px 17px;
+        .frase {
+                font-size: $font-17;
+                overflow: hidden;
+            }
+        .tools {
+            width: calc(100% - 34px);
+
+            ul {
+                gap: 38px;
+                max-width: 338px;
+
+                li {
+                    a {
+
+                        // margin-right: 20px;
+                        span.label {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

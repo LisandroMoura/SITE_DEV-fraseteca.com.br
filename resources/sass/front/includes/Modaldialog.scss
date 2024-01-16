@@ -1,0 +1,167 @@
+.wrapper-modal-dialog {
+    border-radius: 10px;
+    background: $branco;
+
+    &.default{
+        background: $branco;
+        border: 1px solid $cinzaClaro;
+        border-radius: 10px;
+        left: 50%;
+        margin-left: -244px;
+        max-width: 100%;
+        position: fixed;
+        top: 30%;
+        transition: all .35s ease-in-out;
+        width: 488px;
+        z-index: 999;
+    }
+
+    
+    header {
+        padding: 17px;
+        font-size: $font-22;
+        background-color: $cinzaSuperclaro;
+        font-weight: $semibold;
+        color: $cinzaMaisescurodatabela;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .conteudo {
+        padding: 17px;
+
+
+    }
+
+    .form {
+        padding: 17px;
+        display: grid;
+        grid-template-columns: 204px 1fr;
+        gap: 0 20px;
+    }
+
+    .options {
+        padding: 0 17px 17px 17px;
+    }
+
+    select {
+        padding: 20px 40px 20px 20px;
+        color: $corSecundaria;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url("/images/icones/8x8/seta-v01.svg") no-repeat 90% center;
+        border: 1px solid $cinzaClaro;
+        border-radius: 10px;
+
+
+    }
+
+    .bt_new_no_select {
+        display: flex;
+        padding: 5px;
+        cursor: pointer;
+        color: $corDeLink;
+        font-weight: $semibold;
+
+    }
+
+    .botao-fechar-dialog,
+    .bt_close_nova_frase {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        margin-right: 5px;
+        height: 24px;
+        font-size: 20px;
+        padding-left: 1px;
+        text-align: center;
+        // background:linear-gradient($cinzaMaisescurodatabela,$cinzaMaisescurodatabela),linear-gradient($cinzaMaisescurodatabela,$cinzaMaisescurodatabela);
+        // background-position: center;
+        // background-size: 50% 2px,2px 50%;
+        background-repeat: no-repeat;
+        position: absolute;
+        // transform: rotate(46deg);
+        top: 12px;
+        right: 10px;
+        cursor: pointer;
+        border-radius: 100%;
+
+        &:hover {
+            background: #c3c3c3;
+            // background:linear-gradient($cinzaMaisescurodatabela,$cinzaMaisescurodatabela),linear-gradient($cinzaMaisescurodatabela,$cinzaMaisescurodatabela) #eaeaea;
+            // background-position:center;
+            // background-size: 50% 2px,2px 50%; /*thickness = 2px, length = 50% (25px)*/
+            // background-repeat:no-repeat;
+        }
+    }
+
+    .box.texto {
+        display: flex;
+        margin-bottom: 20px;
+        // justify-content: center;
+    }
+
+    .box.botoao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.confirma{
+            gap: 30px;
+            #bt_confirmar_ok{
+                background: $corPrimaria;
+                color: $branco;
+
+                &.sem-destaque{
+                    background: $branco;
+                    color: $cinzaEscuro;
+                    border:1px solid $cinzaClaro;
+                }
+            }
+        }
+    }
+
+    .box.botoao.center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            // color: $corPrimaria;
+            &.bt_cancelar{
+                display: none;
+            }
+        }
+    }
+    .box.botoes {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        justify-content: end;
+        justify-items: center;        
+        justify-items: center;
+        gap: 20px;
+        a{
+            background: $cinzaMaisclarodatabela;
+            padding: 10px 15px;
+            color: $preto;
+            // text-decoration: underline;
+            font-weight: $semibold;
+            &.bt_cancelar{
+                color: $cinzaEscuro;
+            }
+        }
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .wrapper-modal-dialog {
+        &.default{
+            left: 0;
+            margin-left: 0;
+        }
+    }
+}

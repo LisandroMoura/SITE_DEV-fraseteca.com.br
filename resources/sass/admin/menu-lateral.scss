@@ -1,0 +1,115 @@
+.wrapper-menu-lateral-hidden {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    position: fixed;
+    z-index: 9988;
+    overflow: hidden;
+    -ms-transform: translate(-100%,0);
+    -webkit-transform: translate(-100%,0);
+    -moz-transform: translate(-100%,0);
+    -o-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+    transition: all .25s ease-in-out;
+    &.ativado{
+        display: block;
+        transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -o-transform: translate(0,0);
+    }
+    .area-do-menu {
+        height: 100%;
+        position: relative;
+        .fechar_menu{
+            position: absolute;
+            top: 40px;
+            right: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            color: #fff;
+            line-height: 30px;
+            width: 30px;
+            text-decoration: none;
+            height: 30px;
+            z-index: 99999;
+        }
+        .corpo-do-menu {
+            position: relative;
+            background:$branco;
+            display: block;
+            width: 340px;
+            max-width: 90%;
+            height: 100%;
+            z-index: 9999;
+            overflow-y: auto;
+            overflow-x: auto;
+            .topo_do_wrapper {
+                position: relative;
+                padding: 40px 0 10px 40px;
+                h2{
+                    font:800 30px Lato;
+                    color: $dark;
+                    margin: 0;
+                }                
+
+            }
+            ul.menu.principal{
+                list-style: none;
+                padding:0 80px 0 40px;
+                display: inline-block;
+                width: 100%;
+                float: left;
+                position: relative;
+                li{
+                    a{
+                        width: 100%;
+                        padding: 15px 0 ;
+                        display: inline-block;
+                        border-bottom: 1px solid $corHover;
+                        font: 800 18px Lato;
+                        color: $dark; 
+                        &:hover{
+                            background: #f9fbfb;
+                        }
+                        span.icone-foguinho{
+                            display: inline-block;
+                            margin: 0 0 0 5px;
+                            width:15px;
+                            height: 24px;
+                        }                       
+                    }
+                }
+            }
+            .rodape_do_wrapper {
+                padding: 15px 0 10px 40px;
+                display: block;
+                float: left;
+                a.rodape-menu{
+                    background: $primario;
+                    color: #fff;
+                    font: 800 20px Lato;
+                    padding: 15px 18px;
+                }
+            }
+        }
+        .menu-mobile-fechar {
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.7);
+            cursor: pointer;
+            pointer-events: auto;
+            z-index: 8888;
+            
+        }
+    }
+    .midias_do_menu{
+        color:#fbfbfb;
+    }
+  }

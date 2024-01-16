@@ -1,0 +1,133 @@
+@import '../Inputs.scss';
+@import "../inputs/Placeholder.scss";
+@import '../botoes/Botaocallaction.scss';
+
+@import '../Avisos.scss';
+
+.page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+        margin: 20px 0;
+    }
+}
+
+.limit{
+    max-width: 360px; 
+    width: 100%;
+    &.flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    &.pd-15{
+        padding: 0 15px;
+    }
+    &.center{
+        text-align: center;
+    }
+}
+
+.conteudo--login{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+    p{
+        margin: 0;
+    }
+    header{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            text-align: center;
+            font-size: $font-22;
+            color: $corSecundaria;
+            font-weight: $semibold;
+            margin-bottom: 7px;
+        }
+        span{
+            font-size: $font-16;
+            color: $corSecundaria;
+            line-height: $font-20;
+            &.boas-vindas{
+                color: $cinza;
+            }
+        }
+        img{
+            max-width: max-content;
+            margin-bottom: 10px;
+        }
+    }
+
+    .conteudo--login--form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .return,
+        form {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+            
+            .form-check{
+                span.form-check-label.aceito,
+                span.form-check-label.checkbox{
+                    font-size: $font-12;
+                    color: $cinzaMaisescurodatabela;
+                }
+            }
+        }
+        .esqueceu{
+            color: $corDeLink;
+            text-decoration: underline;
+            font-weight: $semibold;
+            font-size: $font-12;
+        }
+    }
+    .conteudo--login--registrar{
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+    .aviso{
+        width: 100%;
+        display: flex;
+        background: $cinzaSuperclaro;
+        color: $cinzaMaisescurodatabela;
+        padding: 30px 15px;
+        justify-content: center;
+        font-weight:$semibold;
+        span{
+            font-size: $font-12;
+        }
+    }
+    .ocultar{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .conteudo--login{
+        header{
+            margin-bottom: 17px;
+            h2{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

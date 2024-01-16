@@ -1,0 +1,114 @@
+
+.home-col{
+    padding: 0;
+    header{
+        &.margin-2{
+            margin-top: 2.0rem;
+        }
+        
+    }
+}
+span.bolinha-curtidas {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 31px;
+    height: 31px; 
+    padding-top: 3px;  
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+    background: $corPrimaria;
+}
+span.icone-foguinho {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 15px;
+    height: 24px;
+}
+.topo-banner{
+    ul.ul-topo-banner{
+        padding: 0;
+        margin:0;
+        display: block;
+        width: 100%;
+        height: auto;
+        list-style: none;        
+        li {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 280px;
+            border-radius: 15px;            
+            
+            a.link-imagem{
+                display: inline-block;
+                width: 100%;
+                height: 100%;  
+                background-image: linear-gradient(rgba(0,0,0,0) 30% ,rgba(0,0,0,.7) 70%);                
+
+            }
+            div.texto{                
+                position: absolute;                
+                bottom:6%;
+                left: 6%;
+                a{
+                    color: #fff;
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+        }        
+    }
+}
+.corpo-home{
+    .categorias{
+        margin-bottom: 0px;
+    }
+    // ul.ul-dados.thumbnail{
+    //     li.col-lg-4{
+    //         // padding: 0;
+    //         // flex: 0 0 33%;
+    //         // max-width: 33%;
+    //         &:nth-child(2),
+    //         &:nth-child(5),
+    //         &:nth-child(8)            
+    //         {
+    //             margin: 0 0.5%;
+    //         }
+    //     }
+    // }
+
+    ul.ul-dados.comece{
+        display: block;
+        li.col-lg-3{
+            // padding: 0;
+            // flex: 0 0 25%;
+            // max-width: 25%;
+            // &:nth-child(2),
+            // &:nth-child(5),
+            // &:nth-child(8)            
+            // {
+            //     margin: 0 0.0%;
+            // }
+            a.link-imagem{
+                display: block;
+                width: 151px;
+                height: 151px;
+                margin: 0 auto;
+                border-radius:100%;
+                float: none;
+
+            }
+            .texto{
+                position: relative;
+                margin-top: 15px;
+                padding: 0 25px;
+                text-align: center;
+            }
+        }
+    }
+}

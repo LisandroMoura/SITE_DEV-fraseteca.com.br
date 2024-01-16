@@ -1,0 +1,121 @@
+ul.itens {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 40px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    margin-top: 20px;
+    // margin-bottom: 50px;
+    .span-bg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        position: absolute;
+        top: 0;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: top;
+
+        &.circulo {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 100%;
+        }
+
+        &.img-null {
+            display: none;
+        }
+    }
+    &.minhas-pastas {
+        li {
+            grid-column: span 1;
+
+            .imagem-zone {
+                position: relative;
+
+                .cantos-arredondados-para-pastas {
+                    position: absolute;
+                    right: 0;
+                    top: 11%;
+                    z-index: 100;
+                    overflow: hidden;
+                    width: 29px;
+                    height: 29px;
+                    background: url("/images/default/cantos-arredondados-v01.png");
+
+                    &.img-null {
+                        display: none;
+                    }
+                }
+
+                a.relacionadas-link-imagem-zone {
+                    display: block;
+                    min-height: max-content;
+                    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 12%, 51% 12%, 43% 0);
+
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+
+            .texto-zone {
+                margin-top: 17px;
+
+                a {
+                    color: $corSecundaria;
+                    font-size: $font-16;
+                    font-weight: $semibold;
+                }
+            }
+        }
+    }
+    &.circulo {
+        li{
+            .imagem-zone{
+                .cantos-arredondados-para-pastas
+                {
+                    display: none;
+                }
+                a.relacionadas-link-imagem-zone.circulo{
+                    width: 154px;
+                    height: 154px;
+                    display: flex;
+                    position: relative;
+                }
+            }
+            .texto-zone {
+                margin-top: 17px;
+                text-align: center;
+
+                a {
+                    color: $corSecundaria;
+                    font-size: $font-16;
+                    font-weight: $semibold;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    ul.itens {
+        grid-template-columns: repeat(2, 183px);
+        grid-gap: 30px 30px;
+        margin-top: 17px;
+        // margin-bottom: 40px;
+        justify-content: center;
+
+        li {
+            a {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

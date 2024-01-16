@@ -1,0 +1,41 @@
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .navegacao--item {
+        padding:20px 30px;
+        color: $corDeLink;
+        font-weight: $semibold;
+        border: 1px solid $corborda;
+        border-radius: 10px;
+
+        &.prev, &.next {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        &.active{
+            background: $cinzaSuperclaro;
+            color: $cinzaMaisescurodatabela;
+            pointer-events: none;
+            border: 0;
+        }
+        &.disabled{
+            pointer-events: none;
+            color: $cinza;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        .navegacao--item {
+            &.box{
+                display: none;
+            }
+        }
+    }
+}

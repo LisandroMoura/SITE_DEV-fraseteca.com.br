@@ -1,0 +1,207 @@
+// importação de Fonts
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap-grid';
+// @import '~bootstrap/scss/bootstrap-reboot';
+
+// Variables
+@import 'variables';
+
+@import '../front/includes/App.scss';
+@import '../front/includes/Bootstrapreduce.scss';
+@import '../front/includes/Icones.scss';
+@import '../front/includes/Iconespainel.scss';
+@import '../front/includes/botoes/Botaopadrao.scss';
+@import '../front/includes/Messenger.scss';
+@import '../front/includes/Progressbar.scss';
+@import '../back/includes/Modaldialog.scss';
+@import '../back/includes/Uploaderadm.scss';
+
+//html mais padrão - tentar substituir o bootstrap depois
+@import 'html';
+
+@import 'menu-lateral';
+@import 'area-pesquisa';
+@import 'topo-dosite';
+@import 'icones';
+
+@import 'botoes';
+@import 'inputs';
+@import 'anuncios';
+@import 'navegacao';
+// @import 'mensagens.scss';
+
+@import 'backend/sidebar';
+@import 'backend/menu';
+@import 'backend/content';
+
+@import 'backend/card_helper';
+
+@import 'backend/default-form';
+@import 'backend/toolbar';
+@import 'backend/usuario/perfil';
+@import 'backend/criando-autor.scss';
+
+//footer
+@import '../front/includes/Footer.scss';
+//@import '../../public/fonts/css/fontello.css';
+
+
+//crop
+@import 'crop';
+
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1464px;
+        &.container-full{
+            max-width: 1464px;
+        }
+    }
+    
+}
+
+.tools{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.wait {
+    display: none;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+
+    &.show {
+        display: block;
+    }
+}
+
+body.site.back-end.painel.pagina.pagina-admin {
+    &.local::after {
+        display: block;
+        position: fixed;
+        display: flex;
+        text-align: center;
+        top: -82px;
+        left: -80px;
+        width: 150px;
+        height: 150px;
+        transform: rotate(-45deg);
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 15px;
+        content: "desenv";
+        background: $callAction;
+    }
+
+    &.producao {
+        &::after {
+            display: block;
+            position: fixed;
+            display: flex;
+            text-align: center;
+            top: -82px;
+            left: -80px;
+            width: 150px;
+            height: 150px;
+            transform: rotate(-45deg);
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 15px;
+            content: "produção";
+            color: #fff;
+            background: #f1552e;
+        }
+    }
+}
+
+
+.only-mobile {
+    display: none;
+}
+
+.no-mobile {
+    display: block;
+}
+
+.corpo-da-pagina {
+    background: $body-bg;
+    font-size: $font-size-base;
+    font-family: $font-family-sans-serif;
+    color: $black;
+
+}
+
+.botao-editar {
+    position: fixed;
+    top: 50%;
+    margin-top: -21px;
+    left: 0;
+    padding: 10px;
+    background: $primario;
+
+    a {
+        color: $branco;
+    }
+
+    color: $branco;
+}
+
+.only-print {
+    display: none;
+}
+
+.no-print {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+body.site.back-end {
+    display: block;
+
+    .container.corpo {
+        // max-width: 2400px;
+        // border: 1px solid #00f73545;
+    }
+
+}
+
+@import 'active';
+@import 'mobile-backend';
+@import 'imprimir'

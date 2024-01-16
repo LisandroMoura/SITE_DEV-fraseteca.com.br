@@ -1,0 +1,54 @@
+.biografia{
+    display: grid;
+    grid-template-columns: 1fr minmax(auto,auto) 1fr;
+    grid-template-areas: "ele1 ele2 ele3";
+    align-items: center;
+    justify-items: center;
+    .biografia--col--linhaUm{
+        grid-area: ele1;
+        width: 100%;
+    }
+    .biografia--col--conteudo{
+        grid-area: ele2;
+        padding: 0 29px;
+        display: flex;
+        align-items: center;
+        .biografia--col--conteudo--avatar{
+            max-width: 55px;
+            margin-right: 10px;
+        }
+        .biografia--col--conteudo--texto-label{
+            font-size: $font-12;
+            color: $cinzaMaisescurodatabela;
+            margin-bottom: 5px;
+
+        }
+        .biografia--col--conteudo--texto-autor{
+            font-size: $font-14;
+            font-weight: $semibold;
+            color: $cinzaMaisescurodatabela;
+            a{
+                display: flex;
+                align-items: center;
+                i.ico{
+                    margin-left: 4px;
+                }
+            }
+
+        }
+    }
+    .biografia--col--linhaDois{
+        grid-area: ele3;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .biografia{
+        grid-template-columns: 1fr minmax(auto,202px) 1fr;
+        .biografia--col--conteudo{
+            padding: 0 17px;
+        }
+    }
+}

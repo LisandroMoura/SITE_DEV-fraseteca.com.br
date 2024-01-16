@@ -1,0 +1,188 @@
+::-webkit-input-placeholder{color:$placeholder;}
+:-moz-placeholder{color:$placeholder;}
+::-moz-placeholder{color:$placeholder;opacity:1;}
+:-ms-input-placeholder{color:$placeholder;}
+button, html, input, select, textarea {
+    font-family: $font-family-sans-serif;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+}
+input:not([type]), 
+input[type=email], 
+input[type=number], 
+input[type=password], 
+input[type=tel], 
+input[type=url], 
+input[type=text] {
+    width: 100%;
+    padding: .7em;
+    margin-bottom: 30px;    
+    height: 67px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: $radios;    
+    border: 1px solid $corHover;
+    -moz-transition: $transition;-o-transition: $transition; transition: $transition;
+    &.comentario-input{
+        padding: .7em 1.24em ;
+        font-size: 18px;
+    }
+}
+
+//inputs do loguin
+input.login-objeto{
+    font-size: 18px;
+    padding: .7em 1.24em;
+    margin-bottom: 24px;
+    &.senha{
+        margin-bottom: 12px;
+    }
+}
+textarea:focus,input:focus{
+     outline: 1px solid $linhaFraca;    
+}
+
+input:-internal-autofill-selected {
+    background-color: #fff !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+input[type="checkbox"]:not(:disabled):active,
+input[type=radio]:not(:disabled):active{
+    // background: url('/img/checkbox_black.png') no-repeat;
+}
+
+input[type="checkbox"]:not(:disabled):checked,
+input[type=radio]:not(:disabled):checked{
+    // background:url('/img/checkbox_black.png') no-repeat;
+}
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    position: relative;
+    top: 5px;
+    -webkit-transition: border .5s;
+    display: inline-block;    
+    left: 0;
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+    // background: url('/img/checkbox.png') no-repeat;
+    cursor: pointer;
+    -o-margin-start: 0;
+    -o-margin-end: 3px;
+    // -o-appearance: none;
+    // appearance: none;
+    // -moz-appearance: none;
+    // -webkit-appearance: none;
+    -moz-margin-start: 0;
+    -moz-margin-end: 3px;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 3px;
+
+}
+textarea{
+    overflow: auto;
+    vertical-align: top;
+    width: 100%;
+    padding: .7em;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: $radios;    
+    border: 1px solid $corHover;
+    margin-bottom: 24px;  
+    -moz-transition: $transition;-o-transition: $transition; transition: $transition;
+    &.comentario-input{
+        padding: 1.24em ;
+        font-size: 18px;
+    }
+}
+
+textarea.frase{    
+    background: url('/images/icones/31x31/minhas-frases-v02.svg') 99% 8% no-repeat;          
+}
+
+input.pergunta-anti-spam{
+    display: inline;
+    float: none;
+    width: 90px;    
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-weight: 700;
+    padding: .7em 25px;
+    font-size: 18px;
+    color: $preto;    
+    border: 0px solid  $primario;
+    border-radius: $radios;
+    box-shadow: 0 5px 10px rgba(81,81,81,.3);
+    background: $primario;
+    -moz-transition: $transition;-o-transition: $transition; transition: $transition;
+
+    &.callAction{
+        background: $callAction;
+    }
+}
+
+a.bt-submit{
+    cursor: pointer;
+    width: auto;
+    width: 100%;
+    padding: .7em 0;
+    font-weight: 700;    
+    font-size: 18px;
+    color: #fff;    
+    border: 1px solid $corHover;
+    border-radius: $radios;
+    box-shadow: 0 5px 10px rgba(81,81,81,.3);
+    background: $primario;
+    -moz-transition: $transition;-o-transition: $transition; transition: $transition;    
+}
+a.bt-submit:hover,
+input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover{
+    background: $primario;
+    /*color: $black*/
+}
+input.reply{
+    margin-bottom: 10px;    
+    margin: 0 0 10px 0;
+    height: 38px;
+    font-size: 15px;
+}
+//Change color orange arrow to default color
+select{
+    width: 100%;
+    padding: .7em;
+    margin-bottom: 30px;
+    height: 67px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: $radios;
+    border: 1px solid $corHover;
+    transition: all 0.35s ease-in-out;    
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    background:rgba(255, 255, 255, 0);
+    z-index: 1;
+    //background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTg1MjQ3OTI0Njc5MTFFQUExMDFENUUyNzI2NjlDRTMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTg1MjQ3OTE0Njc5MTFFQUExMDFENUUyNzI2NjlDRTMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTYwQUU4MTI0MzY2MTFFQTg1RjM4OTdEQkU4ODM1QTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTYwQUU4MTM0MzY2MTFFQTg1RjM4OTdEQkU4ODM1QTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5+YL9sAAAAdUlEQVR42mL8X2S3loGBwQCI/zFgB4xA/JAFSMwD4i0M+MFEJiCxFaoYF9gGxJOZoJwSIH6ERdEnIC4GMWAK30MVo4NaIL6BrBAEVgPxCiT+MSCeAeMwoZlQDsTvoOwMIP4Fk2BBUwhyZyUQKwDxZWQJgAADAB2DFjhfLxtUAAAAAElFTkSuQmCC') 98% 25px no-repeat;           
+}
+.icone-select{
+    position: absolute;
+    right: 18px;  
+    top:14px;
+    font-size: 22px;
+    color:$primario;
+    z-index: 0;
+    cursor: pointer;
+}

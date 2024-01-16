@@ -1,0 +1,80 @@
+@import '../Feedbox.scss';
+@import '../botoes/Botaocallaction.scss';
+
+.feed--item {
+
+    .feed--item--header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        .biografia--perfil--col--avatar {
+            a {
+                img {
+                    max-height: 56px;
+                    max-width: 56px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .biografia--col--conteudo--texto-autor {
+            a {
+                color: $cinzaMaisescurodatabela;
+                font-size: $font-14;
+                font-weight: $semibold;
+            }
+            span.data-normal{
+                font-size: $font-12;
+                font-weight: $regular;
+                color: $cinzaEscuro;
+            }
+        }
+
+    }
+
+    .feed--item--body {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        a {
+            img {
+                object-fit: cover;
+                object-position: center;
+                border-radius: 10px;
+                max-width: initial;
+            }
+        }
+        .texto-zone{
+            h4{
+                font-size: $font-16;
+                color: $corSecundaria;
+                margin: 0;
+            }
+        }
+        .feed--item--body--imagem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .feed--item {
+        .feed--item--body{
+            a{
+                img{
+                    max-width: initial;
+                }
+            }
+        }
+    }
+}

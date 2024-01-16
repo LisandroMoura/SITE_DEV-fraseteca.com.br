@@ -1,0 +1,28 @@
+.conquista-do-usuario{
+    display: inline-block;                    
+    float: left;                    
+    width: 100%;                    
+    clear: both;
+    .conquista{
+        div.icone-box{
+            display: block;
+            float: left;
+            clear: both;
+            i.super-fan{
+                background: url("/images/top_usuarios_17x13.png");
+                width: 17px;
+                height: 13px;
+                margin-right: 5px;
+                display: inline-block;
+            }
+        }
+        div.icone-label{
+            display: block;
+            float: left;
+            color: #9c9d9d;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 800;
+        }
+    }                    
+}

@@ -1,0 +1,129 @@
+.conteudo--pasta--list{
+    margin-bottom: 50px;
+}
+.pasta--list {
+    display: grid;
+    align-items: start;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px 40px;
+
+    li{
+        .imagem-zone{
+            position: relative;
+            .ultima{
+                position: absolute;
+                background: $verde;
+                color: $branco;
+                display: none;
+                font-size: $font-12;
+                font-weight: $semibold;
+                padding: 10px 15px;
+                left: 20px;
+                bottom: 20px;
+                z-index: 2;
+                border-radius: 6px;
+                &.emaprovacao{
+                    display: block;
+                    pointer-events: none;
+                    background: $amarelo;
+                    color: $corSecundaria;
+                }
+                &.emuso{
+                    display: block;
+                    pointer-events: none;
+                }
+            }
+            .tipo-de-pasta{
+                position: absolute;
+                display: flex;
+                width: 41px;
+                height: 41px;
+                top: 42px;
+                right: 20px;
+                z-index: 105;
+                a:hover{
+                    background: none;
+                }
+            }
+            .cantos-arredondados-para-pastas {
+                position: absolute;
+                right: 0;
+                top: 11%;
+                z-index: 100;
+                overflow: hidden;
+                width: 29px;
+                height: 29px;
+                background: url("/images/default/cantos-arredondados-v01.png");
+
+                &.add    ,
+                &.img-null {
+                    display: none;
+                }
+            }
+            
+            a.relacionadas-link-imagem-zone {
+                display: block;
+                min-height: max-content;
+                clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 12%, 51% 12%, 43% 0);
+
+                &:hover {
+                    background: none;
+                }
+                img{
+                    max-width: 100%;
+                }
+
+            }
+            .span-bg {
+                display: block;
+                width: 100%;
+                height: 100%;
+                z-index: 6;
+                position: absolute;
+                top: 0;
+                border-radius: 20px;
+                background-size: cover;
+                background-position: top;
+                &.img-null {
+                    display: none;
+                }
+            }
+        }
+        .texto-zone {
+            margin-top: 17px;
+            a {
+                color: $corSecundaria;
+                font-size: $font-16;
+                font-weight: $semibold;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo--pasta--list{
+        margin-bottom: 40px;
+    }
+    .pasta--list {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 28px;
+        li{
+            .imagem-zone{
+                .ultima{
+                    font-size: 11px;
+                    left: 17px;
+                    bottom: 17px;
+                }
+                .tipo-de-pasta{
+                    right: 17px;
+                    top: 39px;
+                }
+            }
+        }
+    }
+
+    
+        
+}

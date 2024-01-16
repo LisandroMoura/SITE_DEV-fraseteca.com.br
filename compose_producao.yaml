@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  # pandora-php-nginx:
+  #   container_name: pandora-php-nginx
+  #   build: .
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   networks:
+  #     - "pandora-network"
+  #   volumes:
+  #     - ${PWD}/public/:/usr/share/nginx/html/public #applicaction Laravel
+  #     - ${PWD}/app/:/usr/share/nginx/html/app #applicaction Laravel
+  #     - ${PWD}/resources/:/usr/share/nginx/html/resources #applicaction Laravel
+  #     - ${PWD}/routes/:/usr/share/nginx/html/routes #applicaction Laravel
+  #     - ${PWD}/storage/:/usr/share/nginx/html/storage #applicaction Laravea
+  #     - ${PWD}/.env:/usr/share/nginx/html/.env
+  #     - ${PWD}/.original_env:/usr/share/nginx/html/.original_env
+  redis:
+    image: redis
+    command: redis-server --requirepass Redis2023!
+    networks:
+      - "pandora-network"
+    ports:
+      - "6379:6379"
+
+  mariadb:
+    container_name: pandora_fraseteca
+    image: mariadb
+    ports:
+      - "3306"
+    networks:
+      - "pandora-network"
+    environment:
+        MARIADB_USER: pandora
+        MARIADB_DATABASE: pandora_shield
+        MARIADB_ROOT_PASSWORD: passwordhere
+    volumes:
+        - ${PWD}/dbdata:/var/lib/mysql
+
+networks:
+    pandora-network:
+        driver: bridge

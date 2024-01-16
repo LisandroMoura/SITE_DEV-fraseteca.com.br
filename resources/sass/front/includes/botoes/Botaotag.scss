@@ -1,0 +1,23 @@
+.botao-tag{
+    border-radius: 20px;
+    display: block;
+    padding: 20px;
+    transition: $transition;
+    background-color: $cinzaSuperclaro;
+    color:$cinzaMaisescurodatabela;
+    font-size: $font-14;
+    font-weight: $medium;
+    &:hover{
+        background-color: $cinzaMaisclarodatabela;
+    }
+
+    &.tag-item{
+        &.jaesta,
+        &.ativado{
+            // pointer-events: none;
+            color:$corDeLink;
+            border: 1px solid $cinzaClaro;
+            background: $branco;
+        }
+    }
+}

@@ -1,0 +1,262 @@
+.container-anchor-indice{    
+    display: flex;
+    background: #f5f3f3;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 40px 20px;
+    .anchor-indice-wrapper{
+        display: flex;
+        max-width: 500px;
+        gap: 0 25px;         
+        .col1{
+            width: auto;
+            display: flex;
+            align-items: center;            
+            i{
+                margin-right: 15px;
+            }
+            span{
+                
+                color: #9d9c9cff;
+            }
+        }
+        .separator{
+            display: flex;
+            justify-content: center;
+            margin: 0 0px;
+            .icon-separator{
+                width: 1px;
+                background:#e62133ff;
+                height: 100%;
+            }
+        }
+        .col3{
+            display: flex;
+            .anchor-wrapper{
+                display: flex;
+                margin: 15px 0 0px 0;
+                ul{
+                    width: auto;
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    li{
+                        display: inline-flex;
+                        .col_01{
+                            display: inline-flex;
+                            margin-bottom: 10px;
+                            margin-right: 10px;
+                            min-width: 15px;
+                            color: #9d9c9cff;
+                            font-size: 16px;
+                        }
+                        .col_02{
+                            display: inline-flex;
+                            margin-bottom: 15px;
+                            font-family:"ProximaNova-Bold";
+                            font-weight: 700;                            
+                        }
+                    }
+                }
+                .anchors-numbers{
+                    display: block;
+                    width: 30px;                    
+                    color: #9d9c9cff;
+                    margin-right: 15px;                    
+                    .number{
+                        margin-bottom: 10px;
+                    }
+                }
+                .anchors-cols{
+                    display: block;
+                    width: auto;
+                    .item{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.conteudo--anchor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "ele1";
+
+    &.with--capa {
+        grid-template-areas: "ele1 ele2";
+        grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
+    }
+
+    align-items: start;
+    margin-bottom: $mbtitulos;
+
+    .conteudo--anchor--body {
+        border: 1px solid $cinzaClaro;
+        border-radius: 10px;
+        padding: 0;
+        grid-area: ele1;
+
+        .conteudo--anchor--body--header {
+            padding: 17px 29px;
+            border-bottom: 1px solid $cinzaClaro;
+            .indice{
+                font-size: $font-16;
+                color: $cinzaEscuro;
+                font-weight: $semibold;
+            }
+        }
+
+        ul {
+            padding: 20px 29px;
+
+            &.with--capa {
+                padding: 20px 29px 40px 29px;
+            }
+
+            li {
+                display: flex;
+                margin-bottom: 10px;
+
+                .numeros {
+                    font-size: $font-16;
+                    font-weight: $regular;
+                    color: $cinzaMedio;
+                    min-width: 25px;
+                    line-height: 20px;
+                }
+
+                a {
+                    font-size: $font-16;
+                    font-weight: $medium;
+                    color: $corSecundaria;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .conteudo--anchor--capa {
+        grid-area: ele2;
+        height: 100%;
+        background-size: cover;
+        border-radius: 10px;
+        position: relative;
+        &.aguardando{
+            background-color: $cinzaMaisclarodatabela;
+            &::after{
+                content: "carregando...";
+                display: flex;
+                left: calc(50% - 51px);
+                position: absolute;
+                top: calc(50% - 8px)
+            }
+        }
+    }
+}
+
+.conteudo--anchor--item--title {
+    padding: 20px 29px 0px 29px;
+
+    span.numero {
+        color: $cinzaMedio;
+    }
+}
+
+.anchor-content{
+    position: relative;
+    display: block;
+    max-width: 820px;
+    margin: 0 auto 20px auto;
+    padding: 20px 0px 20px 0px; 
+    &.com-recuo{
+        &.item-1{
+            padding: 45px 0px 10px 0px; 
+        }
+    }   
+    &.sem-recuo{
+        &.item-1{
+            padding: 0px 0px 0px 0px; 
+        }
+    }   
+    .anchor-content-title{
+        display: flex;
+        font-family:"ProximaNova-Bold";
+        font-weight: 700;                            
+        color: #9d9c9cff;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        i{
+            display: inline-flex;
+            margin-right: 14px;
+            min-width: 19px;
+        }
+        h2{
+            display: inline-flex;
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container-anchor-indice{   
+        padding: 20px;         
+        .anchor-indice-wrapper{            
+            max-width: 400px;                 
+            gap: 0 16px; 
+            .col1{
+                width: auto;            
+                display: flex;
+                align-items: center;
+                i{
+                    margin-right: 10px;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+            .separator{
+                margin: 0 0px;               
+            }
+            .col3{                
+                .anchor-wrapper{                                      
+                    ul{
+                        
+                        li{
+                            .col_01{
+                                font-size: 14px;
+                            }
+                            .col_02{
+                                font-size: 16px;
+                                margin-bottom: 8px;
+                            }
+    
+                        }
+                    }
+    
+    
+                    .anchors-numbers{
+                        display: block;
+                        width: 30px;                    
+                        color: #9d9c9cff;
+                        margin-right: 15px;
+                        .number{
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .anchors-cols{
+                        display: block;
+                        width: auto;
+                        .item{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

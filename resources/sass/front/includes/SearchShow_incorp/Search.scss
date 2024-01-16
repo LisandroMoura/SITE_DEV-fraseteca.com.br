@@ -1,0 +1,14 @@
+.botoes--filtro{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .botoes--filtro{
+        margin-bottom: 30px;
+        gap: 17px;
+    }
+}

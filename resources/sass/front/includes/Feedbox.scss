@@ -1,0 +1,202 @@
+.anuncio {
+    margin: 30px 0;
+    display: flex;
+    min-width: 300px;
+    min-height: 350px;
+    width: 100%;
+
+    &.teste {
+        min-height: 300px;
+        background: #f1f1f1;
+        border: 2px dashed #d1d1d1;
+        width: 100%;
+        position: relative;
+
+        &::after {
+            color: $corSecundaria;
+            content: "anúncio";
+            position: absolute;
+            top: 50%;
+            left: calc(50% - (65.05px / 2));
+        }
+    }
+}
+
+.feed-box {
+    position: relative;
+    background: $branco;
+    border-radius: 14px;
+    padding: 29px 29px;
+    border: 1px solid $corborda;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    .frase {
+        font-size: $font-18;
+        line-height: 1.58;
+        letter-spacing: 0.14px;
+        max-width: 688px;
+    }
+
+    .texto_para_copiar {
+        display: none;
+    }
+
+    .autor {
+        margin-top: 14px;
+        font-weight: $semibold;
+        font-size: $font-14;
+
+        a {
+            color: $corPrimaria;
+            text-decoration: underline;
+        }
+    }
+
+    .frase_imagem {
+        amp-img,
+        img {
+            max-width: 100%;
+            // width: auto;
+            height: auto;
+            margin-bottom: 29px;
+            margin-top: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .tools {
+        bottom: -14px;
+        position: absolute;
+        width: calc(100% - 58px);
+
+        ul {
+            background: $branco;
+            display: grid;
+            grid-template-columns: 72px 83px 72px;
+            justify-items: center;
+            justify-content: center;
+            gap: 60px;
+            max-width: 407px;
+            margin: 0 auto;
+            &.frases{
+                grid-template-columns: 72px 72px 113px;
+                max-width: 434px;
+            }
+
+            li {
+                a {
+                    width: auto;
+                    text-align: center;
+                    color: $cinzaEscuro;
+                    font-size: $font-12;
+                    font-weight: $medium;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    line-height: 25px;
+
+                    &.favoritas {
+                        >span.ico.ico-estrela-pequena-amarela {
+                            display: none;
+                        }
+                    }
+
+                    &.jacurtida {
+                        pointer-events: none;
+
+                        span.ico.ico-estrela-pequena-amarela {
+                            display: block;
+                        }
+
+                        span.ico.ico-estrela-pequena {
+                            display: none;
+                        }
+                    }
+
+                    &.copiar {
+                        width: auto;
+
+                        &.na-frase {
+                            margin-right: 0px;
+                        }
+                    }
+
+                    // &.compartilhar {
+                    //     &.na-frase {}
+                    // }
+
+                    span.label {
+                        display: inline-block;
+                        padding-left: 10px;
+                    }
+
+                    &:before {
+                        color: $corSecundaria;
+                        vertical-align: middle;
+                        font-size: 21px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tool-salvar {
+        display: none;
+        position: absolute;
+        width: 377px;
+        max-width: 100%;
+        padding: 0;
+        left: 50%;
+        margin-left: -195px;
+        bottom: 2px;
+        // border-bottom-left-radius: 10px;
+        // border-bottom-right-radius: 10px;
+        z-index: 200;
+
+        &.ativado {
+            display: block;
+        }
+
+
+    }
+}
+
+.convite {
+    padding: 29px 29px 40px;
+    font-size: $font-18;
+    font-weight: $regular;
+    a{
+        color: $corSecundaria;
+        font-weight: $semibold
+    }
+}
+
+//principal Tablet
+@media (max-width: 768px) {
+    .feed-box {
+        padding: 17px 17px 27px 17px;
+        .frase {font-size: $font-17;}
+        .tools {
+            width: calc(100% - 34px);
+
+            ul {
+                gap: 38px;
+                max-width: 338px;
+
+                li {
+                    a {
+
+                        // margin-right: 20px;
+                        span.label {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

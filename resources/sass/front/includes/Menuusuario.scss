@@ -1,0 +1,205 @@
+//pendente
+.menu--usuario {
+    display: grid;
+    justify-content: right;
+
+    &.logado {
+        align-items: flex-end;
+        gap: 0 12px;
+        grid-template-columns: 32.90px 32.90px 48.90px;
+        text-align: center;
+    }
+
+    .menu--usuario--item {
+        height: 100%;
+
+        a.principal {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.menu--usuario--item-perfil {
+            display: flex;
+            border-radius: 100%;
+            cursor: pointer;
+
+            .botao-abre-menu-usuario {
+                .avatar {
+                    max-width: 34px;
+
+                    &.inner {
+                        max-width: 100%;
+                    }
+                }
+
+                .icone-seta {
+                    position: absolute;
+                    right: -5px;
+                    top: 8px;
+                    a{
+                        padding: 5px 5px  5px 10px;
+                    }
+                }
+
+                &.ativado {
+                    .icone-seta {
+                        .ico-seta {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.notific__icon {
+    background: $corPrimaria;
+    border-radius: 100%;
+    color: $branco;
+    display: inline-block;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    margin-left: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 16px;
+
+    .circle {
+        font-style: normal;
+        display: block;
+        padding: 0;
+        font-size: 13px;
+        float: none;
+    }
+}
+
+.notific__smallball {
+    background: $corPrimaria;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+}
+
+html.dark{
+    ul.menu-usuario-perfil > li.header-wrapper{
+        background: $darkBranco;
+    }
+}
+
+// Parte interna do menu - logado
+ul.menu-usuario-perfil {
+    width: 212px;
+    top: 45px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 999;
+    transition: all 0.25s ease-in-out;
+
+    &.menu-usuario-perfil_desk {
+        -webkit-transform: translate(500%);
+        transform: translate(500%);
+        position: absolute;
+        display: none;
+
+        &.ativado {
+            right: 0;
+            -webkit-transform: translate(0px);
+            transform: translate(0px);
+            display: block;
+        }
+    }
+
+    li.header-wrapper {
+        border-left: 1px solid $cinzaClaro;
+        border-right: 1px solid $cinzaClaro;
+        border-top: 1px solid $cinzaClaro;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background: $branco;
+        padding: 18px;
+        display: grid;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        grid-template-columns: 54px 1fr;
+        gap: 0 10px;
+
+        .col-nome {
+            display: flex;
+            align-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            a {
+                font-size: $font-12;
+                font-weight: $regular;
+                color: $cinzaMaisescurodatabela;
+                padding: 3px 5px 3px 5px;
+                position: relative;
+
+                .notific__smallball {
+                    right: -20px;
+                    top: 2px;
+                }
+            }
+
+            a.nome {
+                font-size: $font-16;
+                font-weight: $semibold;
+                color: $corSecundaria;
+            }
+
+        }
+    }
+
+    li.itens {
+        border-left: 1px solid $cinzaClaro;
+        border-right: 1px solid $cinzaClaro;
+        background: $branco;
+        padding: 0 0 6px 0;
+        border-bottom: 1px solid $cinzaClaro;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        ul {
+
+            display: inline;
+
+            li.item {
+                a {
+                    padding: 0 18px;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 15px;
+                    margin-bottom: 11px;
+                    font-size: $font-14;
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header.grid {
+        margin: 17px auto;
+        grid-template-areas: "sidea sidea sidec""sideb sideb sideb";
+        grid-template-columns: 10fr 2fr;
+
+        .header--side--b {
+            margin-top: 17px;
+        }
+    }
+}
+
+// FIMMMM

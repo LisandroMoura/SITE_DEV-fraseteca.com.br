@@ -1,0 +1,270 @@
+// div, section,
+.debug {
+    outline: 1px solid #e0e7eb;
+}
+
+pre {
+    display: flex;
+    background: #21202e;
+    color: $verde;
+    padding: 40px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+        display: block;
+        content: "Debug:ON";
+        background: $verde;
+        color: $branco;
+        width: auto;
+        height: max-content;
+        padding: 10px;
+    }
+}
+
+$borderradiusbotao:10px;
+$radius:5px;
+$margintitulos:30px;
+$transition: all .35s ease-in-out;
+$transitionlenta: all 0.15s ease-in-out;
+$mbtitulos: 20px;
+$mbelementos:40px;
+$mbsessao:50px;
+$pdlateral:29px;
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.click-checkbox,
+.pointer {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-interact {
+    pointer-events: none;
+}
+
+.pai {
+    position: relative;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.only-mobile {
+    display: none;
+}
+
+.no-mobile {
+    display: initial;
+}
+
+.no-print {
+    display: block;
+}
+
+.max-width-content {
+    max-width: 1106px;
+    padding: 0 15px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.no-interact {
+    pointer-events: none;
+}
+
+.avatar {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.mt-17 {
+    margin-top: 17px;
+}
+
+.mb-17 {
+    margin-bottom: 17px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.bg-padrao {
+    background-image: url("/images/bgs/fundo-v01.svg");
+}
+
+.pd-final {
+    padding-bottom: 3px;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-image-amp {
+    max-width: 100%;
+}
+
+
+#carregaResultadoPesquisa {
+    display: none;
+}
+
+a {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+.corpo-da-pagina {
+    padding: 0;
+
+    &.local {
+        &::after {
+            display: block;
+            position: fixed;
+            display: flex;
+            text-align: center;
+            top: -82px;
+            left: -80px;
+            width: 150px;
+            height: 150px;
+            transform: rotate(-45deg);
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 15px;
+            content: "local";
+            color: $branco;
+            background: $corSecundaria;
+        }
+    }
+
+    &.producao {
+        &::after {
+            display: block;
+            position: fixed;
+            display: flex;
+            text-align: center;
+            top: -82px;
+            left: -80px;
+            width: 150px;
+            height: 150px;
+            transform: rotate(-45deg);
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 15px;
+            content: "produção";
+            color: $branco;
+            background: $corPrimaria;
+        }
+    }
+}
+
+.demarcador-marca {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0 auto 0px auto;
+    background: $corborda;
+}
+
+@media (max-width: 768px) {
+    $mbtitulos: 17px;
+    $mbelementos: 30px;
+    $mbsessao: 40px;
+    $pdlateral: 17px;
+
+    .no-mobile {
+        display: none;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .corpo-da-pagina {
+        &.local {
+            &::after {
+                bottom: -9px;
+                left: -9px;
+                top: inherit;
+                transform: rotate(0deg);
+                width: auto;
+                height: auto;
+            }
+
+        }
+    }
+}
+
+@import 'Tipografia.scss';
+
+
+.botao-editar {
+    position: fixed;
+    top: 50%;
+    margin-top: -21px;
+    left: 0;
+    padding: 10px;
+    background: $corSecundaria;
+    color: $cinzaMedio;
+
+    a {
+        color: $branco;
+        font-size: $font-22;
+
+        &:hover {
+            color: $verde;
+        }
+    }
+}

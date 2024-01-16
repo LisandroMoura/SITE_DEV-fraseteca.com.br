@@ -1,0 +1,44 @@
+.conteudo--default,
+.conteudo--header--default {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo--default{
+    margin-bottom: 50px;
+    h1{
+        font-weight: $regular;
+        margin-bottom: 10px;
+        span{
+            font-weight: $semibold;
+        }
+    }
+    span{
+        line-height: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .conteudo--header--default{
+        &.not-found{
+            img{
+                max-width: 100%; 
+                height: auto;
+            }
+        }
+    }
+    .conteudo--default{
+        margin-bottom: 40px;
+        margin-top: 17px;
+
+        &.not-found{
+            span{
+                font-size: $font-14;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+    }    
+
+}

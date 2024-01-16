@@ -1,0 +1,24 @@
+.conteudo--header--painel{
+    display: flex;
+    background: $cinzaSuperclaro;
+    margin: 20px auto;
+    .conteudo--header--painel--item{
+        width: 100%;
+        h1{
+            margin: 17px auto;
+            font-size: $font-22;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {  
+    .conteudo--header--painel{
+        display: flex;
+        .conteudo--header--painel--item{
+            h1{
+                font-size: $font-20;
+            }
+        }
+    }
+}
