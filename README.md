@@ -1,4 +1,4 @@
-# ▷ fraseteca;com.br
+# ▷ fraseteca.com.br
 ---
 
 ## ◉ Projeto:
@@ -13,7 +13,7 @@ Site/app de entretenimento criado em 2020 para ser um exponente em buscas de fra
 - MariaDB
 
 ## ◉ Endereço:
-acesse: <https:fraseteca.com.br>
+acesse: [https:fraseteca.com.br](https:fraseteca.com.br)
 
 
 ## ◉ Responsável técnico:
