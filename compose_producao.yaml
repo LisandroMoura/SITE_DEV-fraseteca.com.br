@@ -18,7 +18,7 @@ services:
   #     - ${PWD}/.original_env:/usr/share/nginx/html/.original_env
   redis:
     image: redis
-    command: redis-server --requirepass Redis2023!
+    command: redis-server --requirepass PleasInformHereUPass!
     networks:
       - "pandora-network"
     ports:
