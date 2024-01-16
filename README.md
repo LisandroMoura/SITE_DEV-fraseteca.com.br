@@ -2,7 +2,7 @@
 ---
 
 ## ◉ Projeto:
-Site/app de entretenimento criado em 2020 para ser um exponente em buscas de frases na web
+LARAVEL site/app de entretenimento criado em 2020 para ser um forte exponente em buscas de frases na web
 
 ## ◉ Tecnologias:
 - Laravel 9
