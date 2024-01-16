@@ -15,6 +15,9 @@ Site/app de entretenimento criado em 2020 para ser um exponente em buscas de fra
 ## ◉ Endereço:
 acesse: [https:fraseteca.com.br](https:fraseteca.com.br)
 
+[This is an external link to genome.gov](https://www.genome.gov/)
+
+
 
 ## ◉ Responsável técnico:
 Lisandro Moura \<FullStack\/>:
