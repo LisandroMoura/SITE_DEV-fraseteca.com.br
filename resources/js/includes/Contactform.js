@@ -32,7 +32,7 @@ const ContactForm = {
 
 				// Fraseteca2023Set03
 				grecaptcha.ready(function() {
-					grecaptcha.execute("6LeG8usfAAAAAAjTi90ueiXFpH5FLoCOdx5rUyXg", {action: "submit"}).then(function(token) {
+					grecaptcha.execute("asdasdasd", {action: "submit"}).then(function(token) {
 						if(formulario){
 							recaptchaResponse.value = token
 							formulario.submit()

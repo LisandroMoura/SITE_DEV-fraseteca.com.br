@@ -104,7 +104,7 @@
     {{-- Fraseteca2023Set03 --}}
     @if ($tabela->tipo == '3')
         @if ($tabela->urlamigavel == 'contato')
-            <script src="https://www.google.com/recaptcha/api.js?render=6LeG8usfAAAAAAjTi90ueiXFpH5FLoCOdx5rUyXg"></script>
+            <script src="https://www.google.com/recaptcha/api.js?render=NAN"></script>
         @endif
     @endif
     {{-- Projeto2023May06 --}}
